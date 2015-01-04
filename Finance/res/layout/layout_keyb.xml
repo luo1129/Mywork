@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/keyboard_main" android:background="#ffedefef" android:padding="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/style_keyboard_ll">
+        <Button android:id="@+id/b1" android:text="1" style="@style/style_keyboard_bt" />
+        <Button android:id="@+id/b2" android:layout_marginLeft="5.0dip" android:text="2" style="@style/style_keyboard_bt" />
+        <Button android:id="@+id/b3" android:layout_marginLeft="5.0dip" android:text="3" style="@style/style_keyboard_bt" />
+        <LinearLayout android:orientation="vertical" android:id="@+id/view_plus" android:background="@drawable/keyboard_square_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff888888" android:layout_gravity="center_horizontal" android:id="@+id/bplus" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout style="@style/style_keyboard_ll">
+        <Button android:id="@+id/b4" android:text="4" style="@style/style_keyboard_bt" />
+        <Button android:id="@+id/b5" android:layout_marginLeft="5.0dip" android:text="5" style="@style/style_keyboard_bt" />
+        <Button android:id="@+id/b6" android:layout_marginLeft="5.0dip" android:text="6" style="@style/style_keyboard_bt" />
+        <LinearLayout android:orientation="vertical" android:id="@+id/view_minus" android:background="@drawable/keyboard_square_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff888888" android:layout_gravity="center_horizontal" android:id="@+id/bminus" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout style="@style/style_keyboard_ll">
+        <Button android:id="@+id/b7" android:text="7" style="@style/style_keyboard_bt" />
+        <Button android:id="@+id/b8" android:layout_marginLeft="5.0dip" android:text="8" style="@style/style_keyboard_bt" />
+        <Button android:id="@+id/b9" android:layout_marginLeft="5.0dip" android:text="9" style="@style/style_keyboard_bt" />
+        <ImageButton android:id="@+id/bx" android:background="@drawable/backspace_kbg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@color/transparent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout style="@style/style_keyboard_ll">
+        <Button android:id="@+id/bpoint" android:text="." style="@style/style_keyboard_bt" />
+        <Button android:id="@+id/b0" android:layout_marginLeft="5.0dip" android:text="0" style="@style/style_keyboard_bt" />
+        <Button android:id="@+id/b00" android:layout_marginLeft="5.0dip" android:text="00" style="@style/style_keyboard_bt" />
+        <ImageButton android:id="@+id/bhide" android:background="@drawable/shrink_keyboard_bkg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@color/transparent" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

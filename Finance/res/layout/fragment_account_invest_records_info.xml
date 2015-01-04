@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@+id/listView" android:background="@color/white" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="6.0dip" android:listSelector="@color/content_bg" android:cacheColorHint="@*android:color/transparent" android:divider="#ffffffff" />
+    <include layout="@layout/rl_empty" />
+    <include layout="@layout/progressbar" />
+</FrameLayout>

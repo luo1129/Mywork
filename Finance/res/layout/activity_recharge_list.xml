@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@+id/recharge_action_bar" layout="@layout/fragment_actionbar" />
+    <LinearLayout android:orientation="vertical" android:paddingTop="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@+id/recharge_action_bar">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@+id/recharge_list_recodelist_lv" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="@color/transparent" />
+            <include layout="@layout/rl_empty" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/recharge_list_ll_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/recharge_list_moneyinfo_ll" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="#ff959595" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="账户可用余额（元）" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff959595" android:gravity="center_horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="·账户资金安全由平安保险全额承保·" android:layout_weight="1.0" />
+            </LinearLayout>
+            <TextView android:textSize="26.0sp" android:textColor="#ff007ddf" android:id="@+id/recharge_list_balance_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" />
+            <View android:background="#ffdadada" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="8.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/recharge_list_ll_bank" android:background="@drawable/bg_withdrawals_select_bank" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/recharge_list_iv_bank" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" />
+                <TextView android:textSize="20.0sp" android:textColor="#ffffa200" android:id="@+id/recharge_list_tv_bank" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="请选择充值银行" android:layout_weight="1.0" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wrap_content_right" />
+            </LinearLayout>
+            <View android:background="#ffdadada" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip">
+                <CheckBox android:id="@+id/recharge_list_argeement_cb" android:background="@drawable/bg_cb_remember_pwd" android:layout_width="20.0dip" android:layout_height="20.0dip" android:checked="true" android:button="@null" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff464646" android:id="@+id/recharge_list_argeement_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/str_recharge_list_argee" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/recharge_list_ll_input" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:background="#ffdfecf2" android:padding="@dimen/dimens_withdrawals_list_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textSize="18.0sp" android:textColor="@color/white" android:id="@+id/recharge_list_bt_submit" android:background="@drawable/feedback_submit_bg_xml" android:paddingTop="@dimen/dimens_withdrawals_list_bottom_button_padding" android:paddingBottom="@dimen/dimens_withdrawals_list_bottom_button_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="充值" />
+            </LinearLayout>
+        </LinearLayout>
+        <include android:visibility="gone" layout="@layout/layout_keyboard" />
+    </LinearLayout>
+</RelativeLayout>

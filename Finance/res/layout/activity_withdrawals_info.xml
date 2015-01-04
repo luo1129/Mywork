@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/fragment_actionbar" />
+    <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/style_rw_info_ll">
+                <TextView android:text="申请时间:" style="@style/style_rw_info_left_tv" />
+                <TextView android:textColor="#ff1c8fe9" android:id="@+id/withdrawals_info_vlaue_time" style="@style/style_rw_info_right_tv" />
+            </LinearLayout>
+            <View style="@style/style_rw_info_line" />
+            <LinearLayout style="@style/style_rw_info_ll">
+                <TextView android:text="状态:" style="@style/style_rw_info_left_tv" />
+                <TextView android:textColor="@color/black" android:id="@+id/withdrawals_info_vlaue_status" style="@style/style_rw_info_right_tv" />
+            </LinearLayout>
+            <View style="@style/style_rw_info_line" />
+            <LinearLayout style="@style/style_rw_info_ll">
+                <TextView android:text="提现金额（元）:" style="@style/style_rw_info_left_tv" />
+                <TextView android:textColor="#ffff6e40" android:id="@+id/withdrawals_info_vlaue_tixianmoney" style="@style/style_rw_info_right_tv" />
+            </LinearLayout>
+            <View style="@style/style_rw_info_line" />
+            <LinearLayout android:visibility="visible" style="@style/style_rw_info_ll">
+                <TextView android:text="使用免费提现额度（元）:" style="@style/style_rw_info_left_tv" />
+                <TextView android:textColor="@color/black" android:id="@+id/withdrawals_info_vlaue_diyongquanmoney" style="@style/style_rw_info_right_tv" />
+            </LinearLayout>
+            <View android:visibility="visible" style="@style/style_rw_info_line" />
+            <LinearLayout style="@style/style_rw_info_ll">
+                <TextView android:text="提现转账费用（元）:" style="@style/style_rw_info_left_tv" />
+                <TextView android:textColor="@color/black" android:id="@+id/withdrawals_info_vlaue_fuwufeimoney" style="@style/style_rw_info_right_tv" />
+            </LinearLayout>
+            <View style="@style/style_rw_info_line" />
+            <LinearLayout style="@style/style_rw_info_ll">
+                <TextView android:text="提现手续费（元）:" style="@style/style_rw_info_left_tv" />
+                <TextView android:textColor="@color/black" android:id="@+id/withdrawals_info_vlaue_shouxufeimoney" style="@style/style_rw_info_right_tv" />
+            </LinearLayout>
+            <View style="@style/style_rw_info_line" />
+            <LinearLayout style="@style/style_rw_info_ll">
+                <TextView android:text="提现银行信息:" style="@style/style_rw_info_left_tv" />
+                <TextView android:textColor="@color/black" android:id="@+id/withdrawals_info_vlaue_bank" style="@style/style_rw_info_right_tv" />
+            </LinearLayout>
+            <View style="@style/style_rw_info_line" />
+            <LinearLayout android:id="@+id/withdrawals_info_ll_chulitime" style="@style/style_rw_info_ll">
+                <TextView android:text="处理时间:" style="@style/style_rw_info_left_tv" />
+                <TextView android:textColor="@color/black" android:id="@+id/withdrawals_info_vlaue_chulitime" style="@style/style_rw_info_right_tv" />
+            </LinearLayout>
+            <View android:id="@+id/withdrawals_info_line_chulitime" style="@style/style_rw_info_line" />
+            <LinearLayout android:id="@+id/withdrawals_info_ll_chulibeckup" style="@style/style_rw_info_ll">
+                <TextView android:text="处理备注:" style="@style/style_rw_info_left_tv" />
+                <TextView android:textColor="@color/black" android:id="@+id/withdrawals_info_vlaue_chulibeckup" style="@style/style_rw_info_right_tv" />
+            </LinearLayout>
+            <View android:id="@+id/withdrawals_info_line_chulibeckup" style="@style/style_rw_info_line" />
+            <Button android:textSize="18.0sp" android:textColor="@color/white" android:id="@+id/withdrawals_info_button" android:background="@drawable/feedback_submit_bg_xml" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="20.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

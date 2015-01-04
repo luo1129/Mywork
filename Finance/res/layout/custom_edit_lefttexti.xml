@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/accountLinear" android:background="@drawable/edit_text_style" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:textSize="16.0sp" android:textColor="#ff000000" android:id="@+id/iv_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" />
+        <EditText android:textSize="18.0sp" android:id="@+id/edt_text_input" android:background="@null" android:paddingLeft="0.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_toRightOf="@+id/iv_icon" android:layout_centerVertical="true" />
+        <Button android:id="@+id/btn_text_delete" android:background="@drawable/btn_delete_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:id="@+id/text_note" android:background="#ffe8e1db" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

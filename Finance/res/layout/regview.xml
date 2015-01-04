@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head_layout_public" />
+
+    <EditText
+        android:id="@+id/edit_temp1"
+        style="@style/input_edit"
+        android:hint="请输入用户名(必填)" />
+
+    <EditText
+        android:id="@+id/edit_temp2"
+        style="@style/input_edit"
+        android:hint="请输入密码(必填)"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/edit_temp3"
+        style="@style/input_edit"
+        android:hint="请输入手机号码(必填)"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edit_temp4"
+        style="@style/input_edit"
+        android:hint="请输入验证码(必填)"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edit_temp5"
+        style="@style/input_edit"
+        android:hint="请输如推广码(选填)"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/bt_temp1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="15.0dip"
+        android:background="@drawable/btn_big_n"
+        android:gravity="center"
+        android:paddingBottom="10.0dip"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip"
+        android:paddingTop="10.0dip"
+        android:text="注册"
+        android:textColor="@color/white"
+        android:textSize="18.0sp" />
+
+</LinearLayout>

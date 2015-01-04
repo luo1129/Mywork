@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/keyboard_main" android:background="#ffedefef" android:padding="10.0dip" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/style_keyboard_ll">
+        <Button android:id="@+id/keyborad_bt_1" android:text="1" style="@style/style_keyboard_bt" />
+        <Button android:id="@+id/keyborad_bt_2" android:layout_marginLeft="5.0dip" android:text="2" style="@style/style_keyboard_bt" />
+        <Button android:id="@+id/keyborad_bt_3" android:layout_marginLeft="5.0dip" android:text="3" style="@style/style_keyboard_bt" />
+        <LinearLayout android:orientation="vertical" android:id="@+id/keyboard_ll_plus" android:background="@drawable/keyboard_square_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff888888" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1000" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout style="@style/style_keyboard_ll">
+        <Button android:id="@+id/keyborad_bt_4" android:text="4" style="@style/style_keyboard_bt" />
+        <Button android:id="@+id/keyborad_bt_5" android:layout_marginLeft="5.0dip" android:text="5" style="@style/style_keyboard_bt" />
+        <Button android:id="@+id/keyborad_bt_6" android:layout_marginLeft="5.0dip" android:text="6" style="@style/style_keyboard_bt" />
+        <LinearLayout android:orientation="vertical" android:id="@+id/keyboard_ll_reduce" android:background="@drawable/keyboard_square_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff888888" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1000" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout style="@style/style_keyboard_ll">
+        <Button android:id="@+id/keyborad_bt_7" android:text="7" style="@style/style_keyboard_bt" />
+        <Button android:id="@+id/keyborad_bt_8" android:layout_marginLeft="5.0dip" android:text="8" style="@style/style_keyboard_bt" />
+        <Button android:id="@+id/keyborad_bt_9" android:layout_marginLeft="5.0dip" android:text="9" style="@style/style_keyboard_bt" />
+        <ImageButton android:id="@+id/keyboard_ib_delete" android:background="@drawable/backspace_kbg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@color/transparent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout style="@style/style_keyboard_ll">
+        <Button android:id="@+id/keyborad_bt_dot" android:text="." style="@style/style_keyboard_bt" />
+        <Button android:id="@+id/keyborad_bt_0" android:layout_marginLeft="5.0dip" android:text="0" style="@style/style_keyboard_bt" />
+        <Button android:id="@+id/keyborad_bt_00" android:layout_marginLeft="5.0dip" android:text="00" style="@style/style_keyboard_bt" />
+        <ImageButton android:id="@+id/keyboard_ib_hidden" android:background="@drawable/shrink_keyboard_bkg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@color/transparent" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

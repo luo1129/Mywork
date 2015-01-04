@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/gray_frame" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_top" android:background="@drawable/gray_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="4.0dip">
+        <RelativeLayout android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0sp" android:textColor="@color/black" android:id="@+id/tv_prj_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textColor="#ff888888" android:id="@+id/tv_prj_name" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_toRightOf="@+id/tv_prj_type" android:layout_alignBottom="@+id/tv_prj_type" />
+            <ImageView android:id="@+id/im_transfer" android:background="@drawable/transfer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_toRightOf="@+id/tv_prj_name" android:layout_centerVertical="true" />
+            <ImageView android:id="@+id/im_transfer_cn" android:background="@drawable/transfer_cn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_toRightOf="@+id/im_transfer" android:layout_centerVertical="true" />
+            <ImageView android:id="@+id/im_new" android:background="@drawable/new_re" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_toRightOf="@+id/im_transfer_cn" android:layout_centerVertical="true" />
+            <ImageView android:id="@+id/iv_activity" android:background="@drawable/activity_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_toRightOf="@+id/im_new" android:layout_centerVertical="true" />
+            <ImageView android:id="@+id/iv_limit" android:background="@drawable/limit_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_toRightOf="@+id/iv_activity" android:layout_centerVertical="true" />
+            <ImageView android:id="@+id/iv_phone_spec" android:background="@drawable/icon_phone_specific" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_toRightOf="@+id/iv_limit" android:layout_centerVertical="true" />
+            <ImageView android:background="@drawable/triangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ProgressBar android:id="@+id/pb" android:layout_width="fill_parent" android:layout_height="2.0dip" android:max="100" android:progress="10" android:progressDrawable="@drawable/progressbar" style="?android:attr/progressBarStyleHorizontal" />
+        <LinearLayout android:orientation="horizontal" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:id="@+id/title_tv_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="预期年化收益:" android:layout_weight="2.0" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:gravity="center_horizontal" android:id="@+id/title_tv_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="期限:" android:layout_weight="2.0" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:id="@+id/title_tv_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="投资限额(元):" android:layout_weight="3.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@+id/content_tv_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@+id/content_tv_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@+id/content_tv_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="20.0sp" android:textColor="@color/white" android:id="@+id/pp_btn_right" android:background="@drawable/feedback_submit_bg_xml" android:paddingLeft="20.0dip" android:paddingTop="5.0dip" android:paddingRight="20.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="立即投资" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.yrz.atourong.widget.CustomEditTextLeftIcon android:id="@+id/money" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@+id/pp_btn_right" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <include layout="@layout/layout_keyb" />
+</LinearLayout>

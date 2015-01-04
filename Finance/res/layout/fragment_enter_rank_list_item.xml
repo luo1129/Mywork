@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#ff949494" android:ellipsize="marquee" android:gravity="left" android:id="@+id/tv_corp_name" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="90.0dip" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="26.0dip" android:layout_marginBottom="10.0dip" android:singleLine="true" android:layout_alignParentLeft="true" />
+    <com.yrz.atourong.widget.InterceptScrollContainer android:id="@+id/scroollContainter" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="18.0dip" android:layout_toRightOf="@+id/tv_corp_name" android:layout_alignParentRight="true">
+        <com.yrz.atourong.widget.MyHScrollView android:id="@+id/horizontalScrollView1" android:focusable="false" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/tv_trade" android:text="" android:singleLine="true" style="@style/app_login_item_style" />
+                <TextView android:id="@+id/tv_reg_capital" android:text="" style="@style/app_login_item_style" />
+                <TextView android:id="@+id/tv_complete" android:text="" style="@style/app_login_item_style" />
+                <TextView android:id="@+id/tv_benxi" android:text="" style="@style/app_login_item_style" />
+                <TextView android:id="@+id/tv_demand_hot" android:text="" style="@style/app_login_item_style" />
+                <TextView android:id="@+id/tv_risk_score" android:text="" style="@style/app_login_item_style" />
+            </LinearLayout>
+        </com.yrz.atourong.widget.MyHScrollView>
+    </com.yrz.atourong.widget.InterceptScrollContainer>
+</RelativeLayout>

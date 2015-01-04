@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@+id/title_bar" layout="@layout/fragment_actionbar" />
+    <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@+id/title_bar">
+        <LinearLayout android:id="@+id/forget_pwd_channel_ll_userauth" style="@style/style_forget_pwd_channel_ll">
+            <TextView android:text="实名信息校验" style="@style/style_forget_pwd_channel_tv" />
+            <ImageView style="@style/style_forget_pwd_channel_iv" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/forget_pwd_channel_ll_bankcard" style="@style/style_forget_pwd_channel_ll">
+            <TextView android:text="绑定银行卡信息校验" style="@style/style_forget_pwd_channel_tv" />
+            <ImageView style="@style/style_forget_pwd_channel_iv" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/forget_pwd_channel_ll_safe" style="@style/style_forget_pwd_channel_ll">
+            <TextView android:text="安保问题校验" style="@style/style_forget_pwd_channel_tv" />
+            <ImageView style="@style/style_forget_pwd_channel_iv" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/forget_pwd_channel_ll_tele" android:background="@drawable/feedback_submit_bg_xml" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_tele" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@+id/forget_pwd_channel_telenumber_tv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="联系客服" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@+id/forget_pwd_channel_telenumber_tv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

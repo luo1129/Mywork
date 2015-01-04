@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/fragment_actionbar" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:background="@color/blue" android:layout_width="2.0dip" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:background="@color/blue" android:layout_width="2.0dip" android:layout_height="fill_parent" android:layout_marginBottom="1.0dip" android:layout_centerHorizontal="true" />
+            <ImageView android:background="@drawable/bid_success_act1_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <ImageView android:background="@drawable/bid_success_arrow_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+                <TextView android:textSize="22.0sp" android:textColor="@color/blue" android:id="@+id/tv_successinfo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="今天" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="4.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@+id/iv_2" android:background="@drawable/bid_success_act2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <ImageView android:background="#ff888888" android:layout_width="2.0dip" android:layout_height="fill_parent" android:layout_marginBottom="1.0dip" android:layout_below="@+id/iv_2" android:layout_centerHorizontal="true" />
+            <ImageView android:background="@drawable/bid_success_arrow_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                <TextView android:textSize="22.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开始计算收益" />
+                <TextView android:id="@+id/tv_date_incoming" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="4.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:background="@drawable/bid_success_act3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                <TextView android:textSize="22.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="第一笔收益到账" />
+                <TextView android:id="@+id/tv_date_first_repayment" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/ll_info_free" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.5">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/blue_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+            <RelativeLayout android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="#ff0c84e7" android:id="@+id/tv_i" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="22.0sp" android:textColor="#ff0c84e7" android:id="@+id/tv_free_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/tv_i" android:layout_centerVertical="true" />
+                <TextView android:textSize="22.0sp" android:textColor="#ff5faeef" android:gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:background="#ff85c1f3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff0c84e7" android:gravity="center_horizontal" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="当项目募集完成时,您将获得此免费提现额度" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:background="#ffe9e9e9" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="vertical" android:background="#fffafafa" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+        <Button android:textSize="22.0sp" android:textColor="@color/white" android:id="@+id/btn_contuine" android:background="@drawable/feedback_submit_bg_xml" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="继续投资" />
+        <LinearLayout android:orientation="horizontal" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="22.0sp" android:textColor="@color/white" android:id="@+id/btn_view_account" android:background="@drawable/feedback_submit_bg_xml" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="查看账户" android:layout_weight="1.0" />
+            <Button android:textSize="22.0sp" android:textColor="@color/white" android:id="@+id/bid_success_bt_share" android:background="@drawable/feedback_green_submit_bg" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

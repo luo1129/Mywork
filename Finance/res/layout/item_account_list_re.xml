@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@+id/view_top" layout="@layout/fragment_actionbar" />
+    <LinearLayout android:orientation="vertical" android:background="#ff3cb4ff" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:text="￥净收益:" />
+        <TextView android:textSize="50.0sp" android:textColor="@color/white" android:id="@+id/tv_profit_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:text="￥账户总资产:" />
+        <TextView android:textSize="34.0sp" android:textColor="@color/blue" android:id="@+id/tv_totalAccount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="#ffedeef0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_weight="1.0">
+            <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="账户余额     " android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@+id/tv_top_amount_view" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="4.0dip" android:layout_weight="3.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="含冻结金额 " android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@+id/tv_freeze_money" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:layout_weight="3.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

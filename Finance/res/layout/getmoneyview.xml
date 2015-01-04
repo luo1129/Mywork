@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/head_layout_public" />
+    <EditText android:id="@+id/edit_temp1" android:hint="请输入提现金额(元)" android:inputType="numberDecimal" style="@style/input_edit" />
+    <EditText android:id="@+id/edit_temp2" android:hint="请输入手机验证码(必填)" android:inputType="number" style="@style/input_edit" />
+    <Button android:textSize="18.0sp" android:textColor="@color/white" android:layout_gravity="right" android:id="@+id/bt_temp1" android:background="@drawable/btn_big_n" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:text="申请验证码" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@+id/tx_temp1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:text="您的账号:" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@+id/tx_temp2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:text="可提现金额:" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+        <Button android:textSize="18.0sp" android:textColor="@color/white" android:layout_gravity="right" android:id="@+id/bt_temp2" android:background="@drawable/btn_big_n" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingRight="5.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="我要提现" />
+    </RelativeLayout>
+    <TextView android:textSize="18.0sp" android:textColor="@color/red" android:id="@+id/tx_temp3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:text="温馨提示亲:" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:text="所有可提现金额均属已投资回款后的金额,以上可提现金额指扣除手续费后的金额,不表示一定可以提现,请遵守平台提现规则来输入哦" />
+</LinearLayout>

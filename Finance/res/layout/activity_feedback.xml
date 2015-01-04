@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/fragment_actionbar" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/feedback_text_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.yrz.atourong.widget.CustomEditTextLeftIcon android:id="@+id/feedback_et_telenumber" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/feedback_rl_feedtype" android:background="@drawable/feedback_text_bg" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="#ff949494" android:id="@+id/feedback_tv_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="留言类型" />
+                <ImageView android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/triangle" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <EditText android:gravity="top" android:id="@+id/feedback_et_feedmessage" android:layout_height="200.0dip" android:layout_marginTop="15.0dip" android:hint="告诉我们您的问题、建议或意见，以帮助我们更好地优化产品……" android:singleLine="false" android:maxLength="200" android:lineSpacingExtra="2.0dip" style="@style/feedback_et" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff8e8e8e" android:id="@+id/feedback_tv_inputnum" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="还可以输入200个字" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff8e8e8e" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我们会尽快联系您" />
+            <Button android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/feedback_bt_submit" android:background="@drawable/feedback_submit_bg_xml" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="提交" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/fragment_actionbar" />
+    <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                    <Button android:textSize="14.0sp" android:textColor="@color/white" android:id="@+id/btn_gain_dn" android:background="@drawable/gain_dy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 免费获取 " android:layout_alignParentRight="true" />
+                    <com.yrz.atourong.widget.CustomEditTextLeftIcon android:id="@+id/edit_dynamic_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@+id/btn_gain_dn" />
+                </RelativeLayout>
+                <Button android:id="@+id/btn_submit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="下一步 " style="@style/style_button_submit" />
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/progressbar" />
+    </FrameLayout>
+</LinearLayout>

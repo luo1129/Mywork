@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/fragment_actionbar" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="@dimen/dimens_withdrawals_main_padding_top" android:paddingRight="10.0dip" android:paddingBottom="@dimen/dimens_withdrawals_main_padding_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="horizontal" style="@style/style_withdrawals_item_ll">
+                <ImageView android:src="@drawable/icon_item_money" style="@style/style_withdrawals_item_iv_icon" />
+                <TextView android:layout_width="0.0dip" android:text="充值金额" android:layout_weight="3.0" style="@style/style_withdrawals_item_tv_left" />
+                <com.yrz.atourong.widget.CustomEditTextLeftIcon android:textSize="@dimen/dimens_withdrawals_item_text_bank" android:textColor="#ff1572bd" android:id="@+id/recharge_new_et_money" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="9.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_marginTop="10.0dip" style="@style/style_withdrawals_item_ll">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:src="@drawable/icon_account" style="@style/style_withdrawals_item_iv_icon" />
+                    <TextView android:layout_width="0.0dip" android:text="姓名" android:layout_weight="3.0" style="@style/style_withdrawals_item_tv_left" />
+                    <com.yrz.atourong.widget.CustomEditTextLeftIcon android:textSize="@dimen/dimens_withdrawals_item_text_bank" android:textColor="#ff1572bd" android:id="@+id/recharge_new_et_name" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="法兰克福支行" android:layout_weight="9.0" />
+                    <TextView android:textSize="@dimen/dimens_withdrawals_item_text_left" android:textColor="#ff8e8e8e" android:id="@+id/recharge_new_tv_name" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="9.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/recharge_new_ll_auth_number" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:background="#ffdadada" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                        <ImageView android:src="@drawable/icon_item_usercard" style="@style/style_withdrawals_item_iv_icon" />
+                        <TextView android:layout_width="0.0dip" android:text="身份证号" android:layout_weight="3.0" style="@style/style_withdrawals_item_tv_left" />
+                        <com.yrz.atourong.widget.CustomEditTextLeftIcon android:textSize="@dimen/dimens_withdrawals_item_text_bank" android:textColor="#ff1572bd" android:id="@+id/recharge_new_et_authnumber" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="法兰克福支行" android:layout_weight="9.0" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/recharge_new_ll_auth_alert" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_alert_orange" />
+                <TextView android:textSize="@dimen/dimens_withdrawals_item_text_xiane" android:textColor="#ffa8a8a8" android:id="@+id/recharge_new_tv_alert_auth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="请输入本人实名信息，一旦认证成功将不可更改！" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_marginTop="12.0dip" style="@style/style_withdrawals_item_ll">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:src="@drawable/icon_item_bank" style="@style/style_withdrawals_item_iv_icon" />
+                    <TextView android:layout_width="0.0dip" android:text="银行" android:layout_weight="3.0" style="@style/style_withdrawals_item_tv_left" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/withdrawals_ll_bank" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="9.0">
+                        <TextView android:textSize="@dimen/dimens_withdrawals_item_text_bank" android:textColor="#ff1572bd" android:ellipsize="marquee" android:id="@+id/recharge_new_item_tv_value_bank" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/triangle" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/recharge_new_ll_bank_card" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:background="#ffdadada" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                        <ImageView android:src="@drawable/icon_item_bankcard" style="@style/style_withdrawals_item_iv_icon" />
+                        <TextView android:layout_width="0.0dip" android:text="卡号" android:layout_weight="3.0" style="@style/style_withdrawals_item_tv_left" />
+                        <com.yrz.atourong.widget.CustomEditTextLeftIcon android:textSize="@dimen/dimens_withdrawals_item_text_bank" android:textColor="#ff1572bd" android:id="@+id/recharge_new_et_bankcardnumber" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="法兰克福支行" android:layout_weight="9.0" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/recharge_new_ll_bank_alert" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_alert_orange" />
+                <TextView android:textSize="@dimen/dimens_withdrawals_item_text_xiane" android:textColor="#ffa8a8a8" android:id="@+id/recharge_new_tv_alert_bankcard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="请输入与实名信息一致的储蓄卡卡号" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/withdrawals_fl_submit" android:background="#fffafafa" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:src="@drawable/security" />
+                <TextView android:textColor="#ff88b564" android:gravity="left|center" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:text="账户资金安全由平安保险全额承保" style="@style/ll_item_textview" />
+            </LinearLayout>
+            <Button android:textSize="18.0sp" android:textColor="@color/white" android:id="@+id/withdrawals_bt_submit" android:background="@drawable/feedback_submit_bg_xml" android:padding="@dimen/dimens_withdrawals_list_bottom_button_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="提交" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@+id/recharge_new_fl_keyboard" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/layout_keyboard" />
+    </FrameLayout>
+</FrameLayout>

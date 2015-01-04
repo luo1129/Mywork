@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/fragment_actionbar" />
+    <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/account_finance_text2" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="持卡人：" />
+                    <TextView android:textSize="18.0sp" android:textColor="#ff488fca" android:gravity="left|center" android:id="@+id/tv_real_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_bank" android:background="@drawable/bg_corner_ll2" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:textColorHint="@color/account_finance_text2" android:gravity="left|center" android:id="@+id/tv_bank" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="银行" android:layout_weight="1.0" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/triangle" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                    <com.yrz.atourong.widget.CustomEditBank android:id="@+id/edit_account_no" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_account_city" android:background="@drawable/bg_corner_ll2" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:textColorHint="@color/account_finance_text2" android:gravity="left|center" android:id="@+id/tv_account_city" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="开户城市" android:layout_weight="1.0" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/triangle" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_account_bank" android:background="@drawable/bg_corner_ll2" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:textColorHint="@color/account_finance_text2" android:gravity="left|center" android:id="@+id/tv_account_bank" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="开户行" android:layout_weight="1.0" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/triangle" />
+                </LinearLayout>
+                <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                    <CheckBox android:id="@+id/cb_agree" android:background="@drawable/bg_cb_remember_pwd" android:layout_width="22.0dip" android:layout_height="22.0dip" android:checked="true" android:button="@null" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="默认提现至该卡" android:layout_toRightOf="@+id/cb_agree" />
+                </RelativeLayout>
+                <Button android:id="@+id/btn_submit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="提 交" style="@style/style_button_submit" />
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/progressbar" />
+    </FrameLayout>
+</LinearLayout>

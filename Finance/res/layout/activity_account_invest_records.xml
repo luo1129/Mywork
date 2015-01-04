@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/fragment_actionbar" />
+    <FrameLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:background="@drawable/invest_record_bid" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/blue" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="已投项目" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/content_ll" android:background="@drawable/list_item_frame_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:layout_weight="4.0">
+                    <TextView android:textColor="#ff888888" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="待收本金(元)" />
+                    <TextView android:textColor="#ff464646" android:id="@+id/tv_will_principal" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textColor="#ff888888" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="待收利息(元)" />
+                    <TextView android:textColor="#ff464646" android:id="@+id/tv_will_profit" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:layout_weight="3.0">
+                    <TextView android:textColor="#ff888888" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="已投资项目" />
+                    <TextView android:textColor="#ff464646" android:id="@+id/tv_count_invest" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textColor="#ff888888" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="下一个还款日期" />
+                    <TextView android:textColor="#ff2dae3a" android:id="@+id/tv_date_next_repay" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:background="@drawable/wrap_content_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:padding="3.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:background="@drawable/invest_record_transfer" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="20.0sp" android:textColor="#ffaf7ac1" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="已投可变现项目" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/content_l2" android:background="@drawable/list_item_frame_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:layout_weight="4.0">
+                    <TextView android:textColor="#ff888888" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="可变现项目总价格(元)" />
+                    <TextView android:textColor="#ff464646" android:id="@+id/tv_count_transfer_money" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textColor="#ff888888" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="最近一次变现日期" />
+                    <TextView android:textColor="#ff2dae3a" android:id="@+id/tv_date_transfer_latest" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:layout_weight="3.0">
+                    <TextView android:textColor="#ff888888" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="可变现项目" />
+                    <TextView android:textColor="#ff464646" android:id="@+id/tv_count_transfer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textColor="#ff888888" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="变现中项目" />
+                    <TextView android:textColor="#ff464646" android:id="@+id/tv_count_transfering" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:background="@drawable/wrap_content_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/progressbar" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fffe5000" android:layout_width="fill_parent" android:layout_height="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textColor="@*android:color/white" android:ellipsize="middle" android:id="@+id/ll_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="连连支付" android:singleLine="true" android:drawableLeft="@drawable/title_logo" android:drawablePadding="6.0dip" android:layout_centerInParent="true" />
+</RelativeLayout>

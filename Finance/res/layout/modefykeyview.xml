@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head_layout_public" />
+
+    <EditText
+        android:id="@+id/edit_temp1"
+        style="@style/input_edit"
+        android:hint="请输入原密码"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/edit_temp2"
+        style="@style/input_edit"
+        android:hint="请输入新密码"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/edit_temp3"
+        style="@style/input_edit"
+        android:hint="请再输入密码"
+        android:inputType="textPassword" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15.0dip" >
+
+        <Button
+            android:id="@+id/bt_temp1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_big_n"
+            android:gravity="center"
+            android:paddingBottom="10.0dip"
+            android:paddingTop="10.0dip"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+</LinearLayout>

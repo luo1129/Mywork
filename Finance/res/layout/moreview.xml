@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head_layout_public" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relative_temp0"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/im_temp11"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:src="@drawable/more_message_center_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="0.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:layout_toRightOf="@+id/im_temp11"
+                    android:text="消息推送"
+                    android:textColor="@color/gray"
+                    android:textSize="18.0sp" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_temp1"
+                    android:layout_width="30.0dip"
+                    android:layout_height="30.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25.0dip"
+                    android:background="@drawable/checkbox_selector"
+                    android:button="@null"
+                    android:checked="true" />
+
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:src="@drawable/new_fund_detail_more_icon_pressed"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.100000024dip"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/relative_temp1"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/im_temp1"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:src="@drawable/more_rate_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="0.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:layout_toRightOf="@+id/im_temp1"
+                    android:text="最新活动"
+                    android:textColor="@color/gray"
+                    android:textSize="18.0sp" />
+
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:src="@drawable/new_fund_detail_more_icon_pressed" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.100000024dip"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/relative_temp2"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/im_temp2"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:src="@drawable/more_help_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="0.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:layout_toRightOf="@+id/im_temp2"
+                    android:text="帮助中心"
+                    android:textColor="@color/gray"
+                    android:textSize="18.0sp" />
+
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:src="@drawable/new_fund_detail_more_icon_pressed" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.100000024dip"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/relative_temp3"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/im_temp3"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:src="@drawable/more_about_us_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="0.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:layout_toRightOf="@+id/im_temp3"
+                    android:text="关于我们"
+                    android:textColor="@color/gray"
+                    android:textSize="18.0sp" />
+
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:src="@drawable/new_fund_detail_more_icon_pressed" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.100000024dip"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/relative_temp4"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/im_temp4"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:src="@drawable/more_join_hand_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="0.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:layout_toRightOf="@+id/im_temp4"
+                    android:text="合作招募"
+                    android:textColor="@color/gray"
+                    android:textSize="18.0sp" />
+
+                <ImageView
+                    android:id="@+id/im_temp2"
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:src="@drawable/new_fund_detail_more_icon_pressed" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.100000024dip"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/relative_temp5"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/im_temp5"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:src="@drawable/more_feedback_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="0.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:layout_toRightOf="@+id/im_temp5"
+                    android:text="意见反馈"
+                    android:textColor="@color/gray"
+                    android:textSize="18.0sp" />
+
+                <ImageView
+                    android:id="@+id/im_temp2"
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:src="@drawable/new_fund_detail_more_icon_pressed" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.100000024dip"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/relative_temp6"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/im_temp6"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:src="@drawable/more_to_friends_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="0.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:layout_toRightOf="@+id/im_temp6"
+                    android:text="转发好友"
+                    android:textColor="@color/gray"
+                    android:textSize="18.0sp" />
+
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:src="@drawable/new_fund_detail_more_icon_pressed" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.100000024dip"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/relative_temp7"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/im_temp7"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:src="@drawable/more_check_update_icon" />
+
+                <ImageView
+                    android:id="@+id/im_temp0"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/hot"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="0.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:layout_toRightOf="@+id/im_temp7"
+                    android:text="版本更新"
+                    android:textColor="@color/gray"
+                    android:textSize="18.0sp" />
+
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:src="@drawable/new_fund_detail_more_icon_pressed" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.100000024dip"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/relative_temp8"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/im_temp8"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:src="@drawable/more_attention_us_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="0.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:layout_toRightOf="@+id/im_temp8"
+                    android:text="关注我们"
+                    android:textColor="@color/gray"
+                    android:textSize="18.0sp" />
+
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:src="@drawable/new_fund_detail_more_icon_pressed" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.100000024dip"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip" >
+
+                <Button
+                    android:id="@+id/bt_temp1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/btn_big_n"
+                    android:text="注销"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18.0sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

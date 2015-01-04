@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/message_centre_pop_ll_all" style="@style/style_message_centre_pop_item_ll">
+            <ImageView android:background="@drawable/bg_message_centre_pop_icon_all" style="@style/style_message_centre_pop_img" />
+            <TextView android:text="全部" style="@style/style_message_centre_pop_text" />
+        </LinearLayout>
+        <View style="@style/style_message_centre_pop_line_vertical" />
+        <LinearLayout android:id="@+id/message_centre_pop_ll_kaibiao" style="@style/style_message_centre_pop_item_ll">
+            <ImageView android:background="@drawable/bg_message_centre_pop_icon_tixing" style="@style/style_message_centre_pop_img" />
+            <TextView android:text="开标提醒" style="@style/style_message_centre_pop_text" />
+        </LinearLayout>
+        <View style="@style/style_message_centre_pop_line_vertical" />
+        <LinearLayout android:id="@+id/message_centre_pop_ll_touzi" style="@style/style_message_centre_pop_item_ll">
+            <ImageView android:background="@drawable/bg_message_centre_pop_icon_touzi" style="@style/style_message_centre_pop_img" />
+            <TextView android:text="投资成功" style="@style/style_message_centre_pop_text" />
+        </LinearLayout>
+        <View style="@style/style_message_centre_pop_line_vertical" />
+        <LinearLayout android:id="@+id/message_centre_pop_ll_daoqi" style="@style/style_message_centre_pop_item_ll">
+            <ImageView android:background="@drawable/bg_message_centre_pop_icon_daoqi" style="@style/style_message_centre_pop_img" />
+            <TextView android:text="到期提醒" style="@style/style_message_centre_pop_text" />
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/style_message_centre_pop_line_horizontal" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/message_centre_pop_ll_bianxian" style="@style/style_message_centre_pop_item_ll">
+            <ImageView android:background="@drawable/bg_message_centre_pop_icon_bianxian" style="@style/style_message_centre_pop_img" />
+            <TextView android:text="变现提醒" style="@style/style_message_centre_pop_text" />
+        </LinearLayout>
+        <View style="@style/style_message_centre_pop_line_vertical" />
+        <LinearLayout android:id="@+id/message_centre_pop_ll_huikuan" style="@style/style_message_centre_pop_item_ll">
+            <ImageView android:background="@drawable/bg_message_centre_pop_icon_huikuan" style="@style/style_message_centre_pop_img" />
+            <TextView android:text="回款提醒" style="@style/style_message_centre_pop_text" />
+        </LinearLayout>
+        <View style="@style/style_message_centre_pop_line_vertical" />
+        <LinearLayout android:id="@+id/message_centre_pop_ll_jiangli" style="@style/style_message_centre_pop_item_ll">
+            <ImageView android:background="@drawable/bg_message_centre_pop_icon_jiangli" style="@style/style_message_centre_pop_img" />
+            <TextView android:text="活动奖励" style="@style/style_message_centre_pop_text" />
+        </LinearLayout>
+        <View style="@style/style_message_centre_pop_line_vertical" />
+        <LinearLayout android:id="@+id/message_centre_pop_ll_system" android:visibility="invisible" style="@style/style_message_centre_pop_item_ll">
+            <ImageView android:background="@drawable/bg_message_centre_pop_icon_system" style="@style/style_message_centre_pop_img" />
+            <TextView android:text="系统消息" style="@style/style_message_centre_pop_text" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/pop_message_centre_shandow" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

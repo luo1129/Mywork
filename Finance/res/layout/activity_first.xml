@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yrz.atourong.widget.ViewFlow android:id="@+id/first_viewflow" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:id="@+id/first_bottom_data" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_first_bottom_height" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="#90ffffff" android:paddingLeft="25.0dip" android:paddingRight="0.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textColor="#ff1c1213" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="累计收益（元）" />
+            <TextView android:textColor="#fffb8613" android:id="@+id/first_data_tv_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_first_bottom_margin" android:text="36255150.07" />
+        </LinearLayout>
+        <View android:background="@color/white" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="#90ffffff" android:paddingLeft="25.0dip" android:paddingRight="0.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textColor="#ff1c1213" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="总注册用户数（人）" />
+            <TextView android:textColor="#fffb8613" android:id="@+id/first_data_tv_people" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimens_first_bottom_margin" android:text="631285" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/first_bottom_button" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true">
+        <View android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.898" />
+        <Button android:id="@+id/first_bottom_button_start" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" android:layout_weight="0.07" />
+        <View android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.032" />
+    </LinearLayout>
+</RelativeLayout>

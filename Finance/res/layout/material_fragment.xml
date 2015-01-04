@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yrz.atourong.widget.touchgallery.GalleryWidget.GalleryViewPager android:id="@+id/vp" android:background="#ff6b6b6b" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_gravity="bottom" android:id="@+id/rl_bottom_c" android:background="#b06b6b6b" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@+id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@+id/tv_num_page" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <include layout="@layout/rl_empty" />
+</FrameLayout>

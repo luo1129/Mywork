@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="repay_backtext_size">
+        <item name="android:textSize">14.0sp</item>
+    </style>
+    <style name="home_time">
+        <item name="android:textSize">55.0sp</item>
+    </style>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+            <com.yrz.atourong.widget.CustomEditTextLeftIcon android:id="@+id/edit_mobile_num" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+            <Button android:textSize="14.0sp" android:textColor="@color/white" android:id="@+id/btn_gain_dn" android:background="@drawable/gain_dy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 免费获取 " android:layout_alignParentRight="true" />
+            <com.yrz.atourong.widget.CustomEditTextLeftIcon android:id="@+id/edit_dynamic_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@+id/btn_gain_dn" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rl_login" android:background="@drawable/btn_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="15.0dip">
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="登录" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

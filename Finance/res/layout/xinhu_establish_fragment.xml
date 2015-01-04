@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0">
+            <TextView android:textSize="17.0sp" android:textColor="#ff8e8e8e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="基金成立日期:" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+            <TextView android:textSize="17.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2014-09-23" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0">
+            <TextView android:textSize="17.0sp" android:textColor="#ff8e8e8e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="基金投资人数:" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+            <TextView android:textSize="17.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="180人" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0">
+            <TextView android:textSize="17.0sp" android:textColor="#ff8e8e8e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="基金备案登记号:" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+            <TextView android:textSize="17.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xxxxxxxxxx" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0">
+            <TextView android:textSize="17.0sp" android:textColor="#ff8e8e8e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="相关文件公示:" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

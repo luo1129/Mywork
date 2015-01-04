@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/ll_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <Button android:textSize="22.0sp" android:textColor="@color/white" android:id="@+id/btn_bid" android:background="@drawable/btn_bg" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_margin="6.0dip" android:text="投  标" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@+id/ll_bottom" android:layout_alignParentRight="true">
+        <include layout="@layout/action_bar" />
+        <ScrollView android:background="@color/transparent" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:background="#ffd36b68" android:layout_width="0.0dip" android:layout_height="3.0dip" android:layout_weight="1.0" />
+                    <View android:background="#ff529dbd" android:layout_width="0.0dip" android:layout_height="3.0dip" android:layout_weight="1.0" />
+                    <View android:background="#ff78af87" android:layout_width="0.0dip" android:layout_height="3.0dip" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:background="#30708090" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="转让份额" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                    <View android:background="#30708090" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="份额价值" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                    <View android:background="#30708090" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="转让价格" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                    <View android:background="#30708090" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                </LinearLayout>
+                <View android:background="#30708090" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:background="#30708090" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="13.0sp" android:textColor="@color/black" android:id="@+id/tv_property" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="转让份额:" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                    <View android:background="#30708090" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="13.0sp" android:textColor="@color/black" android:id="@+id/tv_gain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="份额价值:" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                    <View android:background="#30708090" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="13.0sp" android:textColor="@color/black" android:id="@+id/tv_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="转让价格:" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                    <View android:background="#30708090" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                </LinearLayout>
+                <View android:background="#30708090" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout style="@style/base_rl">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="投资后预期收益(元):" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_will_incoming" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@+id/tv_label" />
+                </RelativeLayout>
+                <View android:background="#30708090" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout style="@style/base_rl">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="融资规模:" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_demand_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@+id/tv_label" />
+                </RelativeLayout>
+                <View android:background="#30708090" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout style="@style/base_rl">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="期限:" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_time_limit_big" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@+id/tv_label" />
+                </RelativeLayout>
+                <View android:background="#30708090" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout style="@style/base_rl">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="预期年化利率:" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@+id/tv_label" />
+                </RelativeLayout>
+                <View android:background="#30708090" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout style="@style/base_rl">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="还款方式:" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_repay_way" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@+id/tv_label" />
+                </RelativeLayout>
+                <View android:background="#30708090" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout style="@style/base_rl">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="担保人:" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/RED" android:id="@+id/tv_guarantor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@+id/tv_label" />
+                </RelativeLayout>
+                <View android:background="#30708090" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout style="@style/base_rl">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="保障措施:" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/blue" android:id="@+id/tv_addcredit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@+id/tv_label" />
+                </RelativeLayout>
+                <View android:background="#30708090" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout style="@style/base_rl">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="融资开标时间:" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/RED" android:id="@+id/tv_start_bid_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@+id/tv_label" />
+                </RelativeLayout>
+                <View android:background="#30708090" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@+id/rl_remaning_time" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/base_rl">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="融资截止时间:" android:layout_alignParentLeft="true" />
+                        <TextView android:textSize="15.0sp" android:textColor="@color/blue" android:id="@+id/tv_end_bid_time_display" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@+id/tv_label" />
+                    </RelativeLayout>
+                    <View android:background="#30708090" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                </LinearLayout>
+                <RelativeLayout style="@style/base_rl">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="投资起始金额:" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_min_bid_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@+id/tv_label" />
+                </RelativeLayout>
+                <View android:background="#30708090" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@+id/rl_p" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/base_rl">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="递增额度:" android:layout_alignParentLeft="true" />
+                        <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_step_bid_amount " android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@+id/tv_label" />
+                    </RelativeLayout>
+                    <View android:background="#30708090" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                </LinearLayout>
+                <RelativeLayout style="@style/base_rl">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="起息日:" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_value_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@+id/tv_label" />
+                </RelativeLayout>
+                <View android:background="#30708090" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout style="@style/base_rl">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发布机构:" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_publish_inst" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@+id/tv_label" />
+                </RelativeLayout>
+                <View android:background="#30708090" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout android:visibility="gone" style="@style/base_rl">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="产品介绍附件:" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_attach_filename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@+id/tv_label" />
+                </RelativeLayout>
+                <View android:background="#30708090" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout style="@style/base_rl">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="备注:" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_other" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@+id/tv_label" />
+                </RelativeLayout>
+                <View android:background="#30708090" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

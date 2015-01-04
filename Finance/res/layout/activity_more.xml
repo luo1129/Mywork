@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/fragment_actionbar" />
+    <FrameLayout android:id="@+id/more_banner_framelayout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.7">
+        <FrameLayout android:id="@+id/more_banner_img" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v4.view.ViewPager android:id="@+id/more_banner_vp" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="vertical" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="35.0dip">
+                <TextView android:textColor="#ffffffff" android:id="@+id/more_banner_title_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/more_dots_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/more_banner_loading" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleInverse" />
+        </FrameLayout>
+    </FrameLayout>
+    <LinearLayout android:background="#fffafafa" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0">
+        <ScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/bg_square_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <RelativeLayout android:id="@+id/more_xinbake_rl" style="@style/style_more_menu_item_rl">
+                        <ImageView android:id="@+id/more_dynamic_icon1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/more_xinbake" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <TextView android:textColor="#fffb4b11" android:text="鑫吧客" android:layout_toRightOf="@+id/more_dynamic_icon1" style="@style/style_more_item_left_tv" />
+                        <ImageView style="@style/style_more_item_right_iv" />
+                    </RelativeLayout>
+                    <View android:background="#ffbbb9b9" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
+                    <RelativeLayout android:id="@+id/more_dynamic_rl" style="@style/style_more_menu_item_rl">
+                        <ImageView android:id="@+id/more_dynamic_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/more_dynamic" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <TextView android:text="最新动态" android:layout_toRightOf="@+id/more_dynamic_icon" style="@style/style_more_item_left_tv" />
+                        <ImageView android:id="@+id/more_dynamic_iv" style="@style/style_more_item_right_iv" />
+                        <ImageView android:id="@+id/dynamic_iv_no_read" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/red_spot" android:layout_toLeftOf="@+id/more_dynamic_iv" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/bg_square_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <RelativeLayout android:id="@+id/more_shake_rl" style="@style/style_more_menu_item_rl">
+                        <ImageView android:id="@+id/more_shake_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/more_activity" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <TextView android:textColor="#fffb4b11" android:text="活动专区" android:layout_toRightOf="@+id/more_shake_icon" style="@style/style_more_item_left_tv" />
+                        <ImageView android:id="@+id/more_shake_iv" android:visibility="visible" style="@style/style_more_item_right_iv" />
+                        <ImageView android:id="@+id/shake_iv_no_read" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/red_spot" android:layout_toLeftOf="@+id/more_shake_iv" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <View android:background="#ffbbb9b9" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
+                    <RelativeLayout android:id="@+id/more_invite_rl" style="@style/style_more_menu_item_rl">
+                        <ImageView android:id="@+id/more_invite_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/more_invite" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <TextView android:text="邀请好友返佣" android:layout_toRightOf="@+id/more_invite_icon" style="@style/style_more_item_left_tv" />
+                        <ImageView android:id="@+id/more_invite_iv" android:visibility="visible" style="@style/style_more_item_right_iv" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/bg_square_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                    <RelativeLayout android:id="@+id/more_score_rl" android:visibility="visible" style="@style/style_more_menu_item_rl">
+                        <ImageView android:id="@+id/more_score_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/more_score" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <TextView android:text="给我们评分" android:layout_toRightOf="@+id/more_score_icon" style="@style/style_more_item_left_tv" />
+                        <ImageView style="@style/style_more_item_right_iv" />
+                    </RelativeLayout>
+                    <View android:background="#ffbbb9b9" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
+                    <RelativeLayout android:id="@+id/more_version_rl" style="@style/style_more_menu_item_rl">
+                        <ImageView android:id="@+id/more_version_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/more_version" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <TextView android:text="检查新版本" android:layout_toRightOf="@+id/more_version_icon" style="@style/style_more_item_left_tv" />
+                        <ImageView android:id="@+id/more_version_iv" style="@style/style_more_item_right_iv" />
+                        <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:gravity="center_vertical" android:id="@+id/more_version_value_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@+id/more_version_iv" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <View android:background="#ffbbb9b9" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
+                    <RelativeLayout android:id="@+id/more_feedback_rl" style="@style/style_more_menu_item_rl">
+                        <ImageView android:id="@+id/more_feedback_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/more_feedback" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <TextView android:text="建议反馈" android:layout_toRightOf="@+id/more_feedback_icon" style="@style/style_more_item_left_tv" />
+                        <ImageView style="@style/style_more_item_right_iv" />
+                    </RelativeLayout>
+                    <View android:background="#ffbbb9b9" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" />
+                    <RelativeLayout android:id="@+id/more_aboutxhh_rl" style="@style/style_more_menu_item_rl">
+                        <ImageView android:id="@+id/more_aboutxhh_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/more_aboutxhh" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <TextView android:text="关于鑫合汇" android:layout_toRightOf="@+id/more_aboutxhh_icon" style="@style/style_more_item_left_tv" />
+                        <ImageView style="@style/style_more_item_right_iv" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip">
+                    <RelativeLayout android:id="@+id/more_telephone_rl" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@+id/more_telephone_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_more_telephone" android:layout_centerVertical="true" />
+                        <TextView android:textSize="24.0sp" android:textColor="#ff818181" android:id="@+id/more_telephone_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@+id/more_telephone_icon" />
+                        <TextView android:textSize="14.0sp" android:textColor="#ffacacac" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="( 每 日 9: 00 - 17 : 00 )" android:layout_toRightOf="@+id/more_telephone_icon" android:layout_below="@+id/more_telephone_number" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/fragment_actionbar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="9.2"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="2.3"
+            android:background="#ff00b7f2"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/home_activity_iv"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimens_home_activity_height"
+                android:background="#ffffffff"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.9" />
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="5.0" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true" >
+
+                        <LinearLayout
+                            android:id="@+id/home_top_type_ll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="-5.0dip"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/home_top_type_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/home_top_type_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5.0dip"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/dimens_home_top_type" />
+
+                            <LinearLayout
+                                android:id="@+id/home_top_ll_time_limit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10.0dip"
+                                android:background="@drawable/bg_home_limit_time"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:padding="2.0dip"
+                                android:visibility="gone" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="期限"
+                                    android:textColor="#ffff9200"
+                                    android:textSize="14.0sp" />
+
+                                <TextView
+                                    android:id="@+id/home_top_tv_time_limit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#ffff9200"
+                                    android:textSize="16.0sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/home_top_percent_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/home_top_type_ll"
+                            android:layout_below="@+id/home_top_type_ll"
+                            android:text="0.00%"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dimens_home_top_percent"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/home_top_percent_tv"
+                            android:layout_marginBottom="@dimen/dimens_home_top_percent_right_marginbottom"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_toRightOf="@+id/home_top_percent_tv"
+                            android:text="预期年化收益率"
+                            android:textColor="@color/white"
+                            android:textSize="13.0sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/home_new_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.9"
+                android:background="#fff2f2f2"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="近一月投资人次"
+                        android:textColor="#ff666666"
+                        android:textSize="@dimen/dimens_home_month_key" />
+
+                    <TextView
+                        android:id="@+id/home_month_left_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:text="0"
+                        android:textColor="#ff2b7ec2"
+                        android:textSize="@dimen/dimens_home_month_value" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="#ffe6e6e6" />
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="近一月累积收益（元）"
+                        android:textColor="#ff666666"
+                        android:textSize="@dimen/dimens_home_month_key" />
+
+                    <TextView
+                        android:id="@+id/home_month_right_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:text="0"
+                        android:textColor="#ff2b7ec2"
+                        android:textSize="@dimen/dimens_home_month_value" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="9.0"
+        android:background="@color/white" >
+
+        <include
+            android:id="@+id/home_bottom_new_fl"
+            layout="@layout/layout_home_bottom_new" />
+
+        <include
+            android:id="@+id/home_bottom_guess_fl"
+            layout="@layout/layout_home_bottom_guess" />
+
+        <LinearLayout
+            android:id="@+id/home_bottom_loading"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="#40000000"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/progressbar_bg_half_gray"
+                android:gravity="center"
+                android:padding="16.0dip" >
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="#ffd2d2d2" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimens_home_guess_bottom_padding" >
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/style_home_guess_bottom_text_top"
+                    android:text="100%" />
+
+                <TextView
+                    style="@style/style_home_guess_bottom_text_bottom"
+                    android:text="双重本息保障" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/style_home_guess_bottom_text_top"
+                    android:text="24小时" />
+
+                <TextView
+                    style="@style/style_home_guess_bottom_text_bottom"
+                    android:text="随时充值提现" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/style_home_guess_bottom_text_top"
+                    android:text="360°" />
+
+                <TextView
+                    style="@style/style_home_guess_bottom_text_bottom"
+                    android:text="账户安全防护" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/style_home_guess_bottom_text_top"
+                    android:text="28倍以上" />
+
+                <TextView
+                    style="@style/style_home_guess_bottom_text_bottom"
+                    android:text="高于存款收益" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

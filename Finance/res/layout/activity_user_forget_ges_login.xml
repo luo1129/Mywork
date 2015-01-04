@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+            <com.yrz.atourong.widget.CustomEditTextLeftIcon android:id="@+id/edit_username" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+            <com.yrz.atourong.widget.CustomEditTextLeftIconPwd android:id="@+id/edit_pwd" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_test" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <ImageView android:id="@+id/iv_test" android:layout_width="160.0dip" android:layout_height="40.0dip" />
+            </LinearLayout>
+            <com.yrz.atourong.widget.CustomEditTextLeftIcon android:id="@+id/edit_dynamic_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/ll_test" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_margin="5.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/blue" android:id="@+id/tv_forgetpwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="忘记密码?" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rl_login" android:background="@drawable/btn_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="15.0dip">
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="登录" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

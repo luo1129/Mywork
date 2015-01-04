@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/fragment_actionbar" />
+        <ScrollView android:id="@+id/withdrawals_main_scroll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="@dimen/dimens_withdrawals_main_padding_top" android:paddingRight="10.0dip" android:paddingBottom="@dimen/dimens_withdrawals_main_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@+id/withdrawals_ll_scroll_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" style="@style/style_withdrawals_item_ll">
+                        <ImageView android:src="@drawable/icon_item_yue" style="@style/style_withdrawals_item_iv_icon" />
+                        <TextView android:layout_width="wrap_content" android:text="账户可用余额" style="@style/style_withdrawals_item_tv_left" />
+                        <TextView android:textSize="@dimen/dimens_withdrawals_item_text_left" android:textColor="#ff828282" android:ellipsize="marquee" android:id="@+id/withdrawals_item_tv_value_yue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_marginTop="10.0dip" style="@style/style_withdrawals_item_ll">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:src="@drawable/icon_item_bank" style="@style/style_withdrawals_item_iv_icon" />
+                            <TextView android:layout_width="0.0dip" android:text="银行" android:layout_weight="3.0" style="@style/style_withdrawals_item_tv_left" />
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/withdrawals_ll_bank" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="9.0">
+                                <TextView android:textSize="@dimen/dimens_withdrawals_item_text_bank" android:textColor="#ff1572bd" android:ellipsize="marquee" android:id="@+id/withdrawals_item_tv_value_bank" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="请选择银行卡" android:singleLine="true" android:layout_weight="1.0" />
+                                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/triangle" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View android:id="@+id/withdrawals_line_bank1" android:background="#ffdadada" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/withdrawwals_ll_bank_card" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                            <ImageView android:src="@drawable/icon_item_bankcard" style="@style/style_withdrawals_item_iv_icon" />
+                            <TextView android:layout_width="0.0dip" android:text="卡号" android:layout_weight="3.0" style="@style/style_withdrawals_item_tv_left" />
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="9.0">
+                                <com.yrz.atourong.widget.CustomEditTextLeftIcon android:textSize="@dimen/dimens_withdrawals_item_text_bank" android:textColor="#ff1572bd" android:id="@+id/withdrawals_et_bankcard_number" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="法兰克福支行" android:layout_weight="1.0" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View android:id="@+id/withdrawwals_line_bank2" android:background="#ffdadada" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                            <ImageView android:src="@drawable/icon_item_kaihuhang" style="@style/style_withdrawals_item_iv_icon" />
+                            <TextView android:layout_width="0.0dip" android:text="开户行" android:layout_weight="3.0" style="@style/style_withdrawals_item_tv_left" />
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/withdrawals_ll_kaihuhang" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="9.0">
+                                <TextView android:textSize="@dimen/dimens_withdrawals_item_text_bank" android:textColor="#ff1572bd" android:ellipsize="marquee" android:id="@+id/withdrawals_item_tv_value_kaihuhang" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="请选择开户行" android:singleLine="true" android:layout_weight="1.0" />
+                                <ImageView android:id="@+id/withdrawals_item_iv_toright_kaihuhang" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/triangle" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_alert_orange" />
+                    <TextView android:textSize="@dimen/dimens_withdrawals_item_text_xiane" android:textColor="#ffa8a8a8" android:id="@+id/withdrawals_tv_bankcard_xiane" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" style="@style/style_withdrawals_item_ll">
+                    <ImageView android:src="@drawable/icon_item_money" style="@style/style_withdrawals_item_iv_icon" />
+                    <TextView android:layout_width="wrap_content" android:text="提现金额" style="@style/style_withdrawals_item_tv_left" />
+                    <com.yrz.atourong.widget.UserKeyboardEditText android:id="@+id/withdrawals_et_money" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:background="@drawable/bg_square_border_blue" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="@dimen/dimens_withdrawals_item_text_free_value" android:textStyle="bold" android:textColor="#ff0c84e7" android:ellipsize="marquee" android:id="@+id/withdrawals_tv_free_edu" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                    <View android:background="#ff1c8ce9" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" />
+                    <TextView android:textSize="@dimen/dimens_withdrawals_item_text_free" android:textStyle="bold" android:textColor="#ff0c84e7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="已获得免费提现额度" />
+                </LinearLayout>
+                <LinearLayout android:background="@drawable/bg_square_border_orange" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="@dimen/dimens_withdrawals_item_text_free_value" android:textStyle="bold" android:textColor="#ffff6600" android:ellipsize="marquee" android:id="@+id/withdrawals_tv_free_time" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                    <View android:background="#ffff9f60" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" />
+                    <TextView android:textSize="@dimen/dimens_withdrawals_item_text_free" android:textStyle="bold" android:textColor="#ffff9a57" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="已获得免手续费次数" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:src="@drawable/security" />
+                    <TextView android:textColor="#ff88b564" android:gravity="left|center" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:text="账户资金安全由平安保险全额承保" style="@style/ll_item_textview" />
+                </LinearLayout>
+                <View android:id="@+id/withdrawals_bottom_invisible_submit" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+                <View android:id="@+id/withdrawals_bottom_invisible_keyboard" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@+id/withdrawals_fl_submit" android:background="#fffafafa" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="18.0sp" android:textColor="@color/white" android:id="@+id/withdrawals_bt_submit" android:background="@drawable/feedback_submit_bg_xml" android:padding="@dimen/dimens_withdrawals_list_bottom_button_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="确认提现" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@+id/withdrawals_fl_keyboard" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/layout_keyboard" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/action_bar" />
+    <RelativeLayout android:background="#ff404040" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@+id/rl_go_finance" android:background="#ffa40000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignBottom="@+id/ll_top">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="投资起始金额" />
+                    <TextView android:textSize="16.0sp" android:id="@+id/tv_step_bid_amountre" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/rl_go_finance_img" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:layout_alignParentRight="true">
+                <ImageView android:background="@drawable/shake_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_top" android:background="@drawable/shake_top_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_margin="10.0dip">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="利率" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="期限" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="进度" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:id="@+id/iv_shake_a_1" android:background="@drawable/shake_a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                    <RelativeLayout android:id="@+id/rl_rate_display" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true">
+                        <TextView android:textSize="35.0sp" android:textColor="@color/black" android:id="@+id/tv_rate_display" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@+id/tv_rate_display_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/rl_rate_display" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:id="@+id/iv_shake_a_2" android:background="@drawable/shake_a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                    <RelativeLayout android:id="@+id/rl_time_limit_display" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_alignParentLeft="true">
+                        <TextView android:textSize="35.0sp" android:textColor="@color/black" android:id="@+id/tv_time_limit_display" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@+id/tv_time_limit_display_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_below="@+id/rl_time_limit_display" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:id="@+id/iv_shake_a_3" android:background="@drawable/shake_a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                    <RelativeLayout android:id="@+id/rl_schedule" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="16.0dip" android:layout_alignParentLeft="true">
+                        <TextView android:textSize="35.0sp" android:textColor="@color/black" android:id="@+id/tv_schedule" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@+id/tv_schedule_unit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="26.0dip" android:text="%" android:layout_below="@+id/rl_schedule" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:id="@+id/sharke_tv_placeholder" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_below="@+id/ll_top" />
+        <RelativeLayout android:id="@+id/rl_temp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/sharke_tv_placeholder" android:layout_centerHorizontal="true">
+            <TextView android:textSize="18.0sp" android:textColor="#ffff8500" android:id="@+id/tv_content_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="最具人气投资项目" />
+            <TextView android:textSize="18.0sp" android:textColor="#ffff8500" android:id="@+id/tv_desc_re" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="   尽在你的" android:layout_below="@+id/tv_content_desc" />
+            <TextView android:textSize="26.0sp" android:textColor="#ffff8500" android:id="@+id/tv_desc_ree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="摇一摇~" android:layout_toRightOf="@+id/tv_desc_re" android:layout_below="@+id/tv_content_desc" />
+        </RelativeLayout>
+        <ImageView android:background="@drawable/shake_shake" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_below="@+id/rl_temp" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

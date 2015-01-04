@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/fragment_actionbar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="18.0sp" android:textColor="#ff247ac0" android:gravity="center" android:id="@+id/dynamic_info_title_tv" android:padding="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:background="#ffdadada" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="10.0dip" android:layout_weight="1.0">
+            <WebView android:id="@+id/dynamic_info_content_wv" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <View android:background="#ffdadada" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="#fffafafa" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <Button android:textSize="18.0sp" android:textColor="@color/white" android:id="@+id/dynamic_info_pre_bt" android:background="@drawable/feedback_submit_bg_xml" android:padding="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="上一篇" android:layout_weight="5.0" />
+                <Button android:textSize="18.0sp" android:textColor="@color/white" android:id="@+id/dynamic_info_next_bt" android:background="@drawable/feedback_submit_bg_xml" android:padding="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="下一篇" android:layout_weight="5.0" />
+            </LinearLayout>
+            <Button android:textSize="18.0sp" android:textColor="@color/white" android:id="@+id/dynamic_info_share_bt" android:background="@drawable/bg_button_green" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="5.0dip" android:text="分享给好友" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

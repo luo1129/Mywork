@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff0f0f0"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head_layout_public" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff1f1f1" >
+
+        <TextView
+            android:id="@+id/tx_temp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="投标项目"
+            android:textColor="#ffee0000"
+            android:textSize="18.0sp" />
+
+        <TextView
+            android:id="@+id/tx_temp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="债权转让"
+            android:textColor="#ff333333"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip"
+        android:background="#fff1f1f1" >
+
+        <View
+            android:id="@+id/view_temp1"
+            android:layout_width="wrap_content"
+            android:layout_height="2.0dip"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:layout_weight="1.0"
+            android:background="#ffee0000" />
+
+        <View
+            android:id="@+id/view_temp2"
+            android:layout_width="wrap_content"
+            android:layout_height="2.0dip"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:layout_weight="1.0"
+            android:background="#ffee0000"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="#ffe2e2e2" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

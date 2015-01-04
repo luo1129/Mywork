@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attr="http://schemas.android.com/apk/res/com.yrz.atourong"
+    xmlns:tbp="http://schemas.android.com/apk/res/com.yrz.atourong"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff666666"
+    android:orientation="vertical" >
+
+    <com.yrz.atourong.widget.AnieLayout
+        android:id="@+id/main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/light_gray"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:background="@drawable/actionbar_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="投资列表"
+                android:textColor="@color/white"
+                android:textSize="20.0sp" />
+
+            <ImageView
+                android:id="@+id/iv_topmenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3.0dip"
+                android:background="@drawable/top_menu"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <com.yrz.atourong.widget.PagerSlidingTabStrip
+            android:id="@+id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="42.0dip"
+            android:background="@color/white" />
+
+        <ImageView
+            android:id="@+id/iv_top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/vHDivider"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/listview_divider" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+    </com.yrz.atourong.widget.AnieLayout>
+
+</LinearLayout>

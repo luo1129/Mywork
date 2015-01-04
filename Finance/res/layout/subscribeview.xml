@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/head_layout_public" />
+    <RelativeLayout android:background="@drawable/login_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip">
+        <ImageView android:id="@+id/im_temp1" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/iconmoney" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@+id/tx_temp1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:text="标名" android:layout_toRightOf="@+id/im_temp1" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/gray" android:id="@+id/tx_temp2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:text="起购金额:" android:layout_toRightOf="@+id/im_temp1" android:layout_below="@+id/tx_temp1" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/gray" android:id="@+id/tx_temp3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:text="理财期限:" android:layout_toRightOf="@+id/im_temp1" android:layout_below="@+id/tx_temp2" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/gray" android:id="@+id/tx_temp4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:text="可用余额:0(元)" android:layout_toRightOf="@+id/im_temp1" android:layout_below="@+id/tx_temp3" />
+    </RelativeLayout>
+    <EditText android:id="@+id/edit_temp1" android:hint="申购金额至少1000元" android:inputType="number" style="@style/input_edit" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+        <Button android:textSize="18.0sp" android:textColor="@color/white" android:id="@+id/bt_temp1" android:background="@drawable/btn_big_n" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="申购" android:textAlignment="center" />
+    </RelativeLayout>
+</LinearLayout>

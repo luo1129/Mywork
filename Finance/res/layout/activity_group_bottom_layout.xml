@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" style="@style/layout_full"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="vertical" android:id="@+id/activity_group_container" android:layout_weight="1.0" style="@style/layout_vertical" />
+    <RadioGroup android:id="@+id/activity_group_radioGroup" android:layout_height="56.0dip" android:checkedButton="@+id/activity_group_radioButton0" style="@style/bottombar_radioGroup">
+        <RadioButton android:id="@+id/activity_group_radioButton0" style="@style/bottombar_radioButton" />
+        <RadioButton android:id="@+id/activity_group_radioButton1" style="@style/bottombar_radioButton" />
+        <RadioButton android:id="@+id/activity_group_radioButton2" style="@style/bottombar_radioButton" />
+        <RadioButton android:id="@+id/activity_group_radioButton3" style="@style/bottombar_radioButton" />
+    </RadioGroup>
+</LinearLayout>

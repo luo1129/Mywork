@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/list_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/tv_flag" android:layout_centerVertical="true">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20.0dip" android:id="@+id/tv_name" style="@style/share_item_textview1" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_safe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0dip" android:id="@+id/tv_text1" style="@style/share_item_textview1" />
+                <TextView android:textSize="14.0dip" android:id="@+id/tv_text2" android:layout_marginLeft="10.0dip" style="@style/share_item_textview1" />
+            </LinearLayout>
+            <TextView android:id="@+id/tv_text3" style="@style/share_item_textview2" />
+            <TextView android:id="@+id/tv_text4" style="@style/share_item_textview2" />
+            <TextView android:id="@+id/tv_text5" style="@style/share_item_textview2" />
+        </LinearLayout>
+        <TextView android:id="@+id/tv_flag" android:layout_width="5.0dip" android:layout_height="wrap_content" android:layout_alignTop="@+id/ll_content" android:layout_alignBottom="@+id/ll_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center" android:id="@+id/iv_arrow" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_finance_detail" android:background="#fff3f5f5" android:padding="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/tv_text6" style="@style/share_item_textview2" />
+        <TextView android:id="@+id/tv_text7" style="@style/share_item_textview2" />
+        <TextView android:id="@+id/tv_text8" style="@style/share_item_textview2" />
+        <TextView android:id="@+id/tv_text9" style="@style/share_item_textview2" />
+    </LinearLayout>
+</LinearLayout>

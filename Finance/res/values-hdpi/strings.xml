@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dimens_home_top_weight">1.3</string>
+    <string name="dimens_home_guess_bottom_weight">5.4</string>
+    <string name="dimens_newfinance_bottom_weight_first">1.2</string>
+    <string name="dimens_newfinance_bottom_weight_second">0.8</string>
+    <string name="dimens_withdrawals_item_edit_hint_string">12</string>
+    <string name="dimens_withdrawals_item_edit_string">14</string>
+    <string name="url">url_s100</string>
+</resources>

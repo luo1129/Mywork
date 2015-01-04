@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/fragment_actionbar" />
+    <LinearLayout android:orientation="vertical" android:background="#fffafafa" android:paddingLeft="5.0dip" android:paddingTop="15.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:id="@+id/fund_recharge_ll" style="@style/style_square_list_item_ll">
+            <ImageView android:src="@drawable/icon_invest_record" style="@style/style_square_list_item_iv_icon" />
+            <TextView android:text="充值" style="@style/style_square_list_item_tv" />
+            <ImageView style="@style/style_square_list_item_iv_right" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/fund_withdrawals_ll" style="@style/style_square_list_item_ll">
+            <ImageView android:src="@drawable/icon_withdrawals_gray" style="@style/style_square_list_item_iv_icon" />
+            <TextView android:text="提现" style="@style/style_square_list_item_tv" />
+            <TextView android:id="@+id/fund_withdrawals_data_tv" android:text="可提现额度  元" style="@style/style_square_list_item_tv_data" />
+            <ImageView style="@style/style_square_list_item_iv_right" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/fund_recode_ll" style="@style/style_square_list_item_ll">
+            <ImageView android:src="@drawable/icon_pay_record" style="@style/style_square_list_item_iv_icon" />
+            <TextView android:text="收支记录" style="@style/style_square_list_item_tv" />
+            <TextView android:id="@+id/fund_recode_data_tv" android:visibility="gone" android:text="  笔" style="@style/style_square_list_item_tv_data" />
+            <ImageView style="@style/style_square_list_item_iv_right" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

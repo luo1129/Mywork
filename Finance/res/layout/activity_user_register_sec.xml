@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/fragment_actionbar" />
+    <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@+id/im_transfer_cn" android:background="@drawable/icon_success" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+                <TextView android:textColor="#ffaeaeae" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="已发送短信验证码(免费)至手机号码" />
+                <TextView android:textSize="20.0dip" android:textColor="#ffffa644" android:layout_gravity="center_horizontal" android:id="@+id/tv_mobile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                    <com.yrz.atourong.widget.CustomEditTextLeft android:id="@+id/edit_dynamic_code" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                    <com.yrz.atourong.widget.CustomEditTextLeftPwd android:id="@+id/edit_pwd" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_remind" />
+                    <TextView android:textColor="#ffababab" android:gravity="left|center" android:text="密码建议使用6-16位数字、字母或字符组合" style="@style/ll_item_textview" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                    <com.yrz.atourong.widget.CustomEditTextLeftPwd android:id="@+id/edit_pwd_again" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                        <TextView android:textSize="16.0sp" android:textColor="#ff8e8e8e" android:id="@+id/tv_text_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="推荐人红包代码(选填)" />
+                        <ImageView android:id="@+id/iv_expand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_red_code" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                    <com.yrz.atourong.widget.CustomEditTextLeftIcon android:id="@+id/edit_red_code" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip">
+                <CheckBox android:textColor="@color/black" android:id="@+id/cb_agree" android:background="@drawable/bg_cb_remember_pwd" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_margin="5.0dip" android:checked="true" android:button="@null" android:layout_centerVertical="true" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_toRightOf="@+id/cb_agree" android:layout_alignTop="@+id/cb_agree">
+                    <TextView android:textColor="@color/black" android:id="@+id/tv_protocol1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/protect1and2" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rl_submit" android:background="@drawable/btn_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip">
+                <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@+id/regist_fir_tv_submit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

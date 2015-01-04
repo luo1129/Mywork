@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="8.0">
+        <RelativeLayout android:background="#ff00b7f2" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0">
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="#ff00b7f2" android:scaleType="fitXY" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:background="#fff3f3f3" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.2">
+            <TextView android:textSize="12.0sp" android:textColor="#ff6e6e6e" android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="本期已完成募集金额 （元）" android:layout_weight="1.0" />
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff2b7ec2" android:gravity="left|center" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="198,120,050" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="10.2">
+        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/dimens_home_submit_margin" android:paddingRight="@dimen/dimens_home_submit_margin" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingBottom="@dimen/dimens_newfinance_submit_toppadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_bank_binding_sel" />
+                        <TextView android:textSize="16.0sp" android:textColor="#ff696969" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="高级会员专享" />
+                    </LinearLayout>
+                    <Button android:textSize="@dimen/dimens_newfinance_submit_textsize" android:textColor="@color/white" android:gravity="center" android:id="@+id/newfinance_submit_bt" android:background="@drawable/feedback_submit_bg_xml" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_newfinance_submit_height" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="@dimen/dimens_home_guess_bottom_padding" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_gonggao" />
+                        <TextView android:textSize="14.0sp" android:textColor="#ff8ab766" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="安全保障" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_tixing" />
+                        <TextView android:textSize="14.0sp" android:textColor="#ff8ab766" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="期限灵活" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_fenxiang" />
+                        <TextView android:textSize="14.0sp" android:textColor="#ff8ab766" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="高额收益" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_wenda" />
+                        <TextView android:textSize="14.0sp" android:textColor="#ff8ab766" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="专项产品" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#ffd2d2d2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:padding="@dimen/dimens_home_guess_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="@string/dimens_newfinance_bottom_weight_first">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:text="国有银行资金托管" style="@style/style_newfinance_bottom_text" />
+                        <TextView android:text="专业机构备案" style="@style/style_newfinance_bottom_text" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="@string/dimens_newfinance_bottom_weight_second">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:text="选择期限" style="@style/style_newfinance_bottom_text" />
+                        <TextView android:text="3个月-4年" style="@style/style_newfinance_bottom_text" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:text="过往年化收益" style="@style/style_newfinance_bottom_text" />
+                        <TextView android:text="7%-12%" style="@style/style_newfinance_bottom_text" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:text="适合专业投资者" style="@style/style_newfinance_bottom_text" />
+                        <TextView android:text="100万起投" style="@style/style_newfinance_bottom_text" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

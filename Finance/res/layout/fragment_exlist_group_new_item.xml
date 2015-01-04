@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/list_item_frame_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_ex_point" android:background="@drawable/exp_point_gray_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+    <TextView android:textColor="@color/black" android:id="@+id/title_view" android:layout_width="0.0dip" android:layout_weight="3.0" style="@style/list_item_textview" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/tag_img" android:layout_width="0.0dip" android:src="@drawable/exlist_indecator_up" android:layout_weight="0.3" style="@style/list_item_textview" />
+</LinearLayout>

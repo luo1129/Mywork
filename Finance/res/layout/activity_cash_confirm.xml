@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@+id/main" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@+id/view_top" layout="@layout/fragment_actionbar" />
+    <Button android:textSize="22.0sp" android:textColor="@color/white" android:id="@+id/btn_confirm" android:background="@drawable/feedback_submit_bg_xml" android:padding="10.0dip" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="提交借款申请" android:layout_alignParentBottom="true" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@+id/btn_confirm" android:layout_below="@+id/view_top">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+                <TextView android:textSize="17.0sp" android:textColor="#ff888888" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="借款产品名称:" android:layout_weight="2.0" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff464646" android:id="@+id/tv_sdt_show_prj_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0" />
+            </LinearLayout>
+            <ImageView android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="horizontal" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+                <TextView android:textSize="17.0sp" android:textColor="#ff888888" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="还款方式:" android:layout_weight="2.0" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff464646" android:id="@+id/tv_repay_way_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0" />
+            </LinearLayout>
+            <ImageView android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="horizontal" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+                <TextView android:textSize="17.0sp" android:textColor="#ff888888" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="变现利率:" android:layout_weight="2.0" />
+                <TextView android:textSize="18.0sp" android:textColor="#fff25500" android:id="@+id/tv_cash_rate" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0" />
+            </LinearLayout>
+            <ImageView android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="horizontal" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+                <TextView android:textSize="17.0sp" android:textColor="#ff888888" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="变现金额:" android:layout_weight="2.0" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff464646" android:id="@+id/tv_curr_cash_money" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0" />
+            </LinearLayout>
+            <ImageView android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="horizontal" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+                <TextView android:textSize="17.0sp" android:textColor="#ff888888" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="到期应付本金:" android:layout_weight="2.0" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff464646" android:id="@+id/tv_cash_money" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0" />
+            </LinearLayout>
+            <ImageView android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="horizontal" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+                <TextView android:textSize="17.0sp" android:textColor="#ff888888" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="到期应付利息:" android:layout_weight="2.0" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff464646" android:id="@+id/tv_payable_interest " android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0" />
+            </LinearLayout>
+            <ImageView android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="horizontal" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+                <TextView android:textSize="17.0sp" android:textColor="#ff888888" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="平台服务费:" android:layout_weight="2.0" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff464646" android:id="@+id/tv_service_fee" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0" />
+            </LinearLayout>
+            <ImageView android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="horizontal" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+                <TextView android:textSize="17.0sp" android:textColor="#ff888888" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="实际到账金额:" android:layout_weight="2.0" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff464646" android:id="@+id/tv_real_into_account_money" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0" />
+            </LinearLayout>
+            <ImageView android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="horizontal" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+                <TextView android:textSize="17.0sp" android:textColor="#ff888888" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="实际收益:" android:layout_weight="2.0" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff464646" android:id="@+id/tv_real_income" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0" />
+            </LinearLayout>
+            <ImageView android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="horizontal" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+                <TextView android:textSize="17.0sp" android:textColor="#ff888888" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="剩余资产到期价值:" android:layout_weight="2.0" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff464646" android:id="@+id/tv_sdt_left_time_money" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</RelativeLayout>

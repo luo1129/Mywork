@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="#ffdddddd" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="left" android:id="@+id/tv_corp_name" android:layout_width="90.0dip" android:layout_height="wrap_content" android:text="期次" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/app_title_item_style" />
+    <View android:id="@+id/vertical_driver" android:background="#ffbababa" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_toRightOf="@+id/tv_corp_name" />
+    <ImageView android:id="@+id/head_item_title_left" android:layout_width="10.0dip" android:layout_height="22.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/repayment_title_left_none" android:layout_toRightOf="@+id/vertical_driver" android:layout_centerVertical="true" />
+    <ImageView android:id="@+id/head_item_title_right" android:layout_width="10.0dip" android:layout_height="22.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/repayment_title_right_none" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <com.yrz.atourong.widget.MyHScrollView android:id="@+id/horizontalScrollView1" android:focusable="false" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/head_item_title_right" android:layout_toRightOf="@+id/head_item_title_left" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="horizontal" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/tv_trade" android:text="还款日" style="@style/app_title_item_style" />
+            <TextView android:id="@+id/tv_reg_capital" android:text="应收本金" style="@style/app_title_item_style" />
+            <TextView android:id="@+id/tv_complete" android:text="应收利息" style="@style/app_title_item_style" />
+            <TextView android:id="@+id/tv_benxi" android:text="应收本息" style="@style/app_title_item_style" />
+            <TextView android:id="@+id/tv_demand_hot" android:text="剩余本金" style="@style/app_title_item_style" />
+            <TextView android:id="@+id/tv_risk_score" android:text="还款状态" style="@style/app_title_item_style" />
+        </LinearLayout>
+    </com.yrz.atourong.widget.MyHScrollView>
+</RelativeLayout>

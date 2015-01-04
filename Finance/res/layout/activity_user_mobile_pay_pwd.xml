@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/fragment_actionbar" />
+    <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_pay_pwd" android:background="@drawable/list_item_bg" android:padding="5.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_marginTop="10.0dip">
+                    <TextView android:gravity="left|center" android:text="通过原手机支付密码校验" android:layout_weight="1.0" style="@style/ll_item_textview" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/triangle" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_real" android:background="@drawable/list_item_bg" android:padding="5.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                    <TextView android:gravity="left|center" android:text="通过原手机短信 + 实名信息校验" android:layout_weight="1.0" style="@style/ll_item_textview" />
+                    <TextView android:textColor="@color/blue" android:gravity="left|center" android:id="@+id/tv_pay_pwd" android:text="" style="@style/ll_item_textview" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/triangle" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_bing_bank" android:background="@drawable/list_item_bg" android:padding="5.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                    <TextView android:gravity="left|center" android:text="通过原手机短信 + 绑定银行卡信息校验" android:layout_weight="1.0" style="@style/ll_item_textview" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/triangle" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_set_sqa" android:background="@drawable/list_item_bg" android:padding="5.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                    <TextView android:gravity="left|center" android:text="通过原手机短信 + 安保问题校验" android:layout_weight="1.0" style="@style/ll_item_textview" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/triangle" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/channel_ll_tele" android:background="@drawable/feedback_submit_bg_xml" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_tele" />
+                    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@+id/channel_telenumber_tv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="联系客服" />
+                    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@+id/channel_telenumber_tv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <include layout="@layout/progressbar" />
+    </FrameLayout>
+</LinearLayout>

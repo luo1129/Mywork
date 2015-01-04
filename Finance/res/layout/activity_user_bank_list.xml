@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/fragment_actionbar" />
+    <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@+id/listView" android:background="@drawable/listview_selector_item" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:cacheColorHint="@*android:color/transparent" android:divider="@drawable/listview_divider" />
+            <include layout="@layout/rl_empty" />
+            <Button android:id="@+id/btn_submit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="添加银行卡" android:layout_alignParentBottom="true" style="@style/style_button_submit" />
+        </RelativeLayout>
+        <include layout="@layout/progressbar" />
+    </FrameLayout>
+</LinearLayout>

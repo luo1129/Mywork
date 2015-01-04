@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head_layout_public" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relative_temp1"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/im_temp1"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:src="@drawable/ic_user_header" />
+
+                <TextView
+                    android:id="@+id/tx_temp1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="0.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:layout_toRightOf="@+id/im_temp1"
+                    android:text="账户"
+                    android:textColor="@color/gray"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/tx_temp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="0.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:text=""
+                    android:textColor="@color/gray"
+                    android:textSize="18.0sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.100000024dip"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/relative_temp2"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/im_temp2"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:src="@drawable/ic_validate" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="0.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:layout_toRightOf="@+id/im_temp2"
+                    android:text="实名认证"
+                    android:textColor="@color/gray"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/tx_temp3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="0.0dip"
+                    android:layout_marginRight="50.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:text=""
+                    android:textColor="@color/gray"
+                    android:textSize="18.0sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.100000024dip"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/relative_temp3"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/im_temp3"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:src="@drawable/ic_idcard" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="0.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:layout_toRightOf="@+id/im_temp3"
+                    android:text="身份认证"
+                    android:textColor="@color/gray"
+                    android:textSize="18.0sp" />
+
+                <ImageView
+                    android:id="@+id/im_temp8"
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="17.0dip"
+                    android:src="@drawable/new_fund_detail_more_icon_pressed" />
+
+                <TextView
+                    android:id="@+id/tx_temp4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="0.0dip"
+                    android:layout_marginRight="50.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:text=""
+                    android:textColor="@color/gray"
+                    android:textSize="18.0sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.100000024dip"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/relative_temp4"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/im_temp4"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:src="@drawable/ic_bank_card_manage" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="0.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:layout_toRightOf="@+id/im_temp4"
+                    android:text="银行卡管理"
+                    android:textColor="@color/gray"
+                    android:textSize="18.0sp" />
+
+                <ImageView
+                    android:id="@+id/im_temp9"
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="17.0dip"
+                    android:src="@drawable/new_fund_detail_more_icon_pressed" />
+
+                <TextView
+                    android:id="@+id/tx_temp5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="0.0dip"
+                    android:layout_marginRight="50.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:text=""
+                    android:textColor="@color/gray"
+                    android:textSize="18.0sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.100000024dip"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/relative_temp5"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/im_temp5"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:src="@drawable/ic_p2c_detal_shenggou" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="0.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:layout_toRightOf="@+id/im_temp5"
+                    android:text="充值"
+                    android:textColor="@color/gray"
+                    android:textSize="18.0sp" />
+
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:src="@drawable/new_fund_detail_more_icon_pressed" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.100000024dip"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/relative_temp6"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/im_temp6"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:src="@drawable/tab_mine_p_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="0.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:layout_toRightOf="@+id/im_temp6"
+                    android:text="提现"
+                    android:textColor="@color/gray"
+                    android:textSize="18.0sp" />
+
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:src="@drawable/new_fund_detail_more_icon_pressed" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.100000024dip"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/relative_temp7"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/im_temp7"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:src="@drawable/ic_trade_password" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="0.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:layout_toRightOf="@+id/im_temp7"
+                    android:text="修改登录密码"
+                    android:textColor="@color/gray"
+                    android:textSize="18.0sp" />
+
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:src="@drawable/new_fund_detail_more_icon_pressed" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.100000024dip"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/relative_temp8"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/im_temp7"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:src="@drawable/ic_open_password" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="0.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:layout_toRightOf="@+id/im_temp7"
+                    android:text="手势密码"
+                    android:textColor="@color/gray"
+                    android:textSize="18.0sp" />
+
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:src="@drawable/new_fund_detail_more_icon_pressed" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.100000024dip"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tx_temp6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="注册时间:"
+                    android:textColor="@color/blue"
+                    android:textSize="16.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="www.id68.cn"
+                    android:textColor="@color/gray"
+                    android:textSize="16.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Email:id68@+id68.cn"
+                    android:textColor="@color/gray"
+                    android:textSize="16.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="深圳市前海理想金融控股有限公司"
+                    android:textColor="@color/gray"
+                    android:textSize="16.0sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

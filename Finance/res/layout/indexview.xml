@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head_layout_public" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/mainViewPager"
+                android:layout_width="fill_parent"
+                android:layout_height="200.0dip" />
+
+            <RelativeLayout
+                android:id="@+id/relative_temp1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageButton
+                    android:id="@+id/imbt_temp2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffffff"
+                    android:src="@drawable/indexbody" />
+
+                <ImageView
+                    android:id="@+id/im_temp1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30.0dip"
+                    android:layout_marginTop="105.0dip"
+                    android:src="@drawable/num_0"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/im_temp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19.0dip"
+                    android:layout_marginTop="105.0dip"
+                    android:layout_toRightOf="@+id/im_temp1"
+                    android:src="@drawable/num_0"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/im_temp4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_marginTop="180.0dip"
+                    android:layout_toRightOf="@+id/im_temp2"
+                    android:src="@drawable/pointindex"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/im_temp3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30.0dip"
+                    android:layout_marginTop="105.0dip"
+                    android:layout_toRightOf="@+id/im_temp2"
+                    android:src="@drawable/num_0"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

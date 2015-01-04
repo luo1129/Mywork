@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/white" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <include layout="@layout/fragment_actionbar" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+                <RelativeLayout style="@style/base_rl_use">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前账户余额:" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_user_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@+id/tv_label" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/rl_use" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip">
+                    <TextView android:textColor="@color/RED" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(含活动奖励金额" />
+                    <TextView android:textColor="@color/RED" android:id="@+id/tv_use_m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                    <TextView android:textColor="@color/RED" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=")" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#30708090" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout style="@style/base_rl">
+                <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_labele" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="转让价格:" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/edit_bid_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@+id/tv_labele" />
+            </RelativeLayout>
+            <View android:background="#30708090" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <View android:id="@+id/view_use" android:background="#30708090" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout style="@style/base_rl">
+                <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_labelt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="投资后账户余额:" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_remaind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@+id/tv_labelt" />
+            </RelativeLayout>
+            <View android:background="#30708090" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout style="@style/base_rl">
+                <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_labelt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="预估收益:" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_gain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@+id/tv_labelt" />
+            </RelativeLayout>
+            <View android:background="#30708090" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="6.0dip">
+                <com.yrz.atourong.widget.CustomEditTextLeftIcon android:id="@+id/edit_dynamic_code" android:layout_width="140.0dip" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_test" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/edit_dynamic_code">
+                    <ImageView android:id="@+id/iv_test" android:layout_width="160.0dip" android:layout_height="40.0dip" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="#30708090" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="6.0dip">
+                <CheckBox android:textColor="@color/black" android:id="@+id/cb_agree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_alignParentLeft="true" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/cb_agree" android:layout_centerVertical="true">
+                    <TextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我已阅读并同意" />
+                    <TextView android:textColor="#ff0000ff" android:id="@+id/tv_agreement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="《鑫合汇债权再转让协议》" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rl_next" android:background="@drawable/btn_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="15.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下一步" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

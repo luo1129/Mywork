@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/fragment_actionbar" />
+    <LinearLayout style="@style/style_rw_info_ll">
+        <TextView android:text="申请时间:" style="@style/style_rw_info_left_tv" />
+        <TextView android:textColor="#ff1c8fe9" android:id="@+id/recharge_info_vlaue_time" style="@style/style_rw_info_right_tv" />
+    </LinearLayout>
+    <View style="@style/style_rw_info_line" />
+    <LinearLayout style="@style/style_rw_info_ll">
+        <TextView android:text="状态:" style="@style/style_rw_info_left_tv" />
+        <TextView android:textColor="@color/black" android:id="@+id/recharge_info_vlaue_status" style="@style/style_rw_info_right_tv" />
+    </LinearLayout>
+    <View style="@style/style_rw_info_line" />
+    <LinearLayout style="@style/style_rw_info_ll">
+        <TextView android:text="充值金额（元）:" style="@style/style_rw_info_left_tv" />
+        <TextView android:textColor="#ffff6e40" android:id="@+id/recharge_info_vlaue_money" style="@style/style_rw_info_right_tv" />
+    </LinearLayout>
+    <View style="@style/style_rw_info_line" />
+    <LinearLayout android:id="@+id/recharge_info_ll_actualmoney" android:visibility="visible" style="@style/style_rw_info_ll">
+        <TextView android:text="实际到账金额（元）:" style="@style/style_rw_info_left_tv" />
+        <TextView android:textColor="@color/black" android:id="@+id/recharge_info_vlaue_actualmoney" style="@style/style_rw_info_right_tv" />
+    </LinearLayout>
+    <View android:id="@+id/recharge_info_line_actualmoney" android:visibility="visible" style="@style/style_rw_info_line" />
+    <LinearLayout android:id="@+id/recharge_info_ll_type" android:visibility="gone" style="@style/style_rw_info_ll">
+        <TextView android:text="充值方式:" style="@style/style_rw_info_left_tv" />
+        <TextView android:textColor="@color/black" android:id="@+id/recharge_info_vlaue_type" style="@style/style_rw_info_right_tv" />
+    </LinearLayout>
+    <View android:id="@+id/recharge_info_line_type" android:visibility="gone" style="@style/style_rw_info_line" />
+    <LinearLayout android:id="@+id/recharge_info_ll_bank" android:visibility="gone" style="@style/style_rw_info_ll">
+        <TextView android:text="转账银行:" style="@style/style_rw_info_left_tv" />
+        <TextView android:textColor="@color/black" android:id="@+id/recharge_info_vlaue_bank" style="@style/style_rw_info_right_tv" />
+    </LinearLayout>
+    <View android:id="@+id/recharge_info_line_bank" android:visibility="gone" style="@style/style_rw_info_line" />
+    <LinearLayout android:id="@+id/recharge_info_ll_shenqingbeckup" android:visibility="gone" style="@style/style_rw_info_ll">
+        <TextView android:text="申请备注:" style="@style/style_rw_info_left_tv" />
+        <TextView android:textColor="@color/black" android:id="@+id/recharge_info_vlaue_shenqingbeckup" style="@style/style_rw_info_right_tv" />
+    </LinearLayout>
+    <View android:id="@+id/recharge_info_line_shenqingbeckup" android:visibility="gone" style="@style/style_rw_info_line" />
+    <LinearLayout style="@style/style_rw_info_ll">
+        <TextView android:text="处理时间:" style="@style/style_rw_info_left_tv" />
+        <TextView android:textColor="@color/black" android:id="@+id/recharge_info_vlaue_chltime" style="@style/style_rw_info_right_tv" />
+    </LinearLayout>
+    <View style="@style/style_rw_info_line" />
+    <LinearLayout android:id="@+id/recharge_info_ll_liushui" style="@style/style_rw_info_ll">
+        <TextView android:text="支付流水号:" style="@style/style_rw_info_left_tv" />
+        <TextView android:textColor="@color/black" android:id="@+id/recharge_info_vlaue_liushui" style="@style/style_rw_info_right_tv" />
+    </LinearLayout>
+    <View android:id="@+id/recharge_info_line_liushui" style="@style/style_rw_info_line" />
+    <LinearLayout style="@style/style_rw_info_ll">
+        <TextView android:text="处理备注:" style="@style/style_rw_info_left_tv" />
+        <TextView android:textColor="@color/black" android:id="@+id/recharge_info_vlaue_chulibeckup" style="@style/style_rw_info_right_tv" />
+    </LinearLayout>
+    <View style="@style/style_rw_info_line" />
+    <Button android:textSize="18.0sp" android:textColor="@color/white" android:id="@+id/recharge_info_button" android:background="@drawable/feedback_submit_bg_xml" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="20.0dip" />
+</LinearLayout>

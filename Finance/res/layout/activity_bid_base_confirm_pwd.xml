@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:background="@color/white" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <include layout="@layout/fragment_actionbar" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <RelativeLayout style="@style/base_rl">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="项目名称:" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_prj_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@+id/tv_label" />
+                    <ImageView android:id="@+id/iv_bao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_toRightOf="@+id/tv_prj_name" android:layout_centerVertical="true" />
+                    <ImageView android:id="@+id/iv_prj_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_toRightOf="@+id/iv_bao" android:layout_centerVertical="true" />
+                    <ImageView android:id="@+id/iv_transfer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_toRightOf="@+id/iv_prj_type" android:layout_centerVertical="true" />
+                    <ImageView android:id="@+id/im_new" android:background="@drawable/new_re" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_toRightOf="@+id/iv_transfer" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="#30708090" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout style="@style/base_rl">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="项目编号:" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_prj_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@+id/tv_label" />
+                </RelativeLayout>
+                <View android:background="#30708090" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout style="@style/base_rl">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="投资金额:" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ff64c92a" android:id="@+id/tv_bid_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@+id/tv_label" />
+                </RelativeLayout>
+                <View android:background="#30708090" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout style="@style/base_rl">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="预期年化利率:" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@+id/tv_label" />
+                </RelativeLayout>
+                <View android:background="#30708090" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout style="@style/base_rl">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="期限:" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_time_limit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@+id/tv_label" />
+                </RelativeLayout>
+                <View android:background="#30708090" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout style="@style/base_rl">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付密码:" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <com.yrz.atourong.widget.CustomEditTextLeftIconPwd android:textSize="15.0sp" android:textColor="@color/black" android:id="@+id/edit_confirm_pwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="6.0dip" android:layout_toRightOf="@+id/tv_label" />
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rl_next" android:background="@drawable/btn_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="15.0dip">
+                <TextView android:textSize="20.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确 定" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/progressbar" />
+</FrameLayout>

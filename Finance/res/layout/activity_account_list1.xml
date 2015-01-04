@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@+id/view_top" layout="@layout/fragment_actionbar" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="#ff3cb4ff" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="￥账户总资产:" />
+                    <TextView android:textSize="40.0dip" android:textColor="@color/white" android:id="@+id/tv_totalAccount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="0.00" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="@dimen/dimens_account_middle_margin" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/ll_info1" android:background="@drawable/account_manage_finance_list_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:text="累计收益:" style="@style/finance_item_textview3" />
+                        <TextView android:id="@+id/tv_text1" android:text="0.00" style="@style/finance_item_textview4" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/ll_info2" android:background="@drawable/account_manage_finance_list_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_account_middle_margin" android:layout_weight="1.0">
+                        <TextView android:id="@+id/tv_show2" android:text="待收本息:" style="@style/finance_item_textview3" />
+                        <TextView android:id="@+id/tv_text2" android:text="0.00" style="@style/finance_item_textview4" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="@dimen/dimens_account_middle_margin" android:layout_marginRight="5.0dip" android:layout_marginBottom="@dimen/dimens_account_middle_margin" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/ll_info3" android:background="@drawable/account_manage_finance_list_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:text="冻结金额:" style="@style/finance_item_textview3" />
+                        <TextView android:id="@+id/tv_text3" android:text="0.00" style="@style/finance_item_textview4" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/ll_info4" android:background="@drawable/account_manage_finance_list_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimens_account_middle_margin" android:layout_weight="1.0">
+                        <TextView android:text="可用金额:" style="@style/finance_item_textview3" />
+                        <TextView android:id="@+id/tv_text4" android:text="0.00" style="@style/finance_item_textview4" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_invest" android:background="@drawable/list_item_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_invest_record" />
+                    <TextView android:gravity="left|center" android:text="投资记录" android:layout_weight="1.0" style="@style/ll_item_textview" />
+                    <TextView android:gravity="left|center" android:id="@+id/tv_transfer" android:text="" style="@style/ll_item_textview" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/triangle" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_fund" android:background="@drawable/list_item_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_pay_record" />
+                    <TextView android:gravity="left|center" android:text="资金记录" android:layout_weight="1.0" style="@style/ll_item_textview" />
+                    <TextView android:gravity="left|center" android:text="充值    提现" style="@style/ll_item_textview" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/triangle" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_account" android:background="@drawable/list_item_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_account_setting" />
+                    <TextView android:gravity="left|center" android:text="账户设置" android:layout_weight="1.0" style="@style/ll_item_textview" />
+                    <TextView android:gravity="left|center" android:id="@+id/tv_safe" android:text="" style="@style/ll_item_textview" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/triangle" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimens_account_alert_green_ll_margin">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/security" />
+                    <TextView android:textColor="#ff88b564" android:gravity="left|center" android:text="账户资金安全由平安保险全额承保" style="@style/ll_item_textview" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_bottom" android:background="#ff7a7a7a" android:paddingLeft="5.0dip" android:paddingTop="@dimen/dimens_account_bottom_margin_top_left" android:paddingRight="5.0dip" android:paddingBottom="@dimen/dimens_account_bottom_margin_top_left" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_account_bottom_ll">
+                <Button android:textSize="@dimen/dimens_account_bottom_textsize" android:textColor="@color/white" android:id="@+id/btn_recharge" android:background="@drawable/account_login_bg_xml" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="充 值" android:layout_weight="1.0" />
+                <Button android:textSize="@dimen/dimens_account_bottom_textsize" android:textColor="@color/white" android:id="@+id/btn_withdrawal" android:background="@drawable/account_register_bg_xml" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimens_account_bottom_margin_top_left" android:text="提 现" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include android:visibility="gone" layout="@layout/progressbar" />
+    <RelativeLayout android:id="@+id/llf_bottom" android:background="@color/half_transparent" android:visibility="gone" android:clickable="true" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_opt_bottom" android:background="#ff7a7a7a" android:paddingLeft="5.0dip" android:paddingTop="@dimen/dimens_account_bottom_margin_top_left" android:paddingRight="5.0dip" android:paddingBottom="@dimen/dimens_account_bottom_margin_top_left" android:layout_width="fill_parent" android:layout_height="@dimen/dimens_account_bottom_ll" android:layout_alignParentBottom="true">
+            <Button android:textSize="@dimen/dimens_account_bottom_textsize" android:textColor="@color/white" android:id="@+id/btn_login" android:background="@drawable/account_login_bg_xml" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="登录" android:layout_weight="1.0" />
+            <Button android:textSize="@dimen/dimens_account_bottom_textsize" android:textColor="@color/white" android:id="@+id/btn_regiter" android:background="@drawable/account_register_bg_xml" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dimens_account_bottom_margin_top_left" android:text="注册" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/gray_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@+id/ll_opt_bottom">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/security" />
+            <TextView android:textColor="#ff88b564" android:gravity="left|center" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="账户资金安全由平安保险全额承保" style="@style/ll_item_textview" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

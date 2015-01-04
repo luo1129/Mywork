@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_forget_pwd_channel_item" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="3.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@+id/rw_list_item_bankicon_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff5f5f5f" android:id="@+id/rw_list_item_bankno_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0">
+            <LinearLayout android:orientation="horizontal" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="#ff5f5f5f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥" />
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/rw_list_item_money_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textColor="#ff5f5f5f" android:id="@+id/rw_list_item_time_tv" android:paddingLeft="10.0dip" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="18.0sp" android:textColor="#ff0b8efb" android:gravity="center" android:id="@+id/rw_list_item_status_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@+id/view_top" layout="@layout/fragment_actionbar" />
+    <LinearLayout android:background="#ffffffde" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="#ff888888" android:id="@+id/tv_contentinfo" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="将您通过鑫合汇持有的资产（聚优宝-JYB1214909093）作为权益保障发布借款，从而提前变现!" />
+    </LinearLayout>
+    <ImageView android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="#ff888888" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="变现利率:" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.yrz.atourong.widget.CustomEditTextRightUnit android:id="@+id/cuse_rateunit" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:background="@drawable/tip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textColor="#ffaeaeae" android:id="@+id/tv_rate_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="tips" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="#ff888888" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="可变现资产价值:" />
+        <TextView android:textColor="#ff76d033" android:layout_gravity="center_vertical" android:id="@+id/tv_countchashmoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1290元" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元" />
+    </LinearLayout>
+    <ImageView android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="#ff888888" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="变现金额:" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.yrz.atourong.widget.CustomEditTextRightUnit android:id="@+id/cuse_cashunit" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:background="@drawable/tip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textColor="#ffaeaeae" android:id="@+id/tv_money_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="变现金额应小于等于可变现资产价值!" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:textSize="22.0sp" android:textColor="@color/white" android:id="@+id/btn_confirm" android:background="@drawable/feedback_submit_bg_xml" android:padding="10.0dip" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="确定" />
+</LinearLayout>

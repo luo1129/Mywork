@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="content_bg">#ffe1e1e1</color>
+    <color name="sub_title">#ffaaaaaa</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="half_transparent">#b0000000</color>
+    <color name="orange">#ffffaa00</color>
+    <color name="green">#ff4ad100</color>
+    <color name="dark_orange">#ffdd9500</color>
+    <color name="warm_gray">#ff808069</color>
+    <color name="home_text">#ff888888</color>
+    <color name="yellow">#ffff9900</color>
+    <color name="deep_green">#ff76d033</color>
+    <color name="gray_bg">#fffafafa</color>
+    <color name="light_gray">#ffcecece</color>
+    <color name="dark_gray">#ff191919</color>
+    <color name="home_text1">#ffb7d4ea</color>
+    <color name="home_text2">#fff7c08d</color>
+    <color name="home_text3">#ffc9e28e</color>
+    <color name="account_text1">#ffff8817</color>
+    <color name="account_finance_text1">#ff8e8e8e</color>
+    <color name="account_finance_text2">#ff70707a</color>
+    <color name="account_finance_text3">#ff86aaff</color>
+    <color name="account_finance_text4">#ff45bfff</color>
+    <color name="account_finance_text5">#fff4b613</color>
+    <color name="account_finance_text6">#fffc5366</color>
+    <color name="account_finance_text7">#ff0094d9</color>
+    <color name="account_finance_text8">#ff57b69a</color>
+    <color name="account_manage_finance_text1">#ffff8500</color>
+    <color name="account_manage_finance_text2">#ff93c51d</color>
+    <color name="account_fund_text1">#ff35c7ca</color>
+    <color name="account_fund_text2">#ff63c67e</color>
+    <color name="light_orange">#fffdc620</color>
+    <color name="DARK_ORANGE">#ffff8c00</color>
+    <color name="DarkTurquoise">#ff00ced1</color>
+    <color name="blue">#ff4c97cf</color>
+    <color name="bluere">#ff52c7ff</color>
+    <color name="RED">#ffa40000</color>
+    <color name="help_center_bg">#fff5f5f5</color>
+    <color name="help_center_helptitle">#ff2a2824</color>
+    <color name="help_center_helpinfo">#ff474747</color>
+    <color name="feedback_dialog_item_press">#ffc3c3c3</color>
+    <color name="dialog_button_press">#ffffaa00</color>
+    <color name="color_help_center_item_datetime">#fffcfcfc</color>
+    <color name="background_tab_pressed">#6633b5e5</color>
+    <color name="background_window">#ffe5e5e5</color>
+    <color name="gray">#ff808080</color>
+    <color name="red">#ffee0000</color>
+
+</resources>

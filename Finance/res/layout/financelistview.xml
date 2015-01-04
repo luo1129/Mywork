@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/head_layout_public" />
+    <LinearLayout android:background="#fff1f1f1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="#ffee0000" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/tx_temp1" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="10.0dip" android:text="投标项目" android:layout_weight="1.0" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/tx_temp2" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="10.0dip" android:text="债权转让" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:background="#fff1f1f1" android:layout_width="fill_parent" android:layout_height="2.0dip">
+        <View android:id="@+id/view_temp1" android:background="#ffee0000" android:layout_width="wrap_content" android:layout_height="2.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_weight="1.0" />
+        <View android:id="@+id/view_temp2" android:background="#ffee0000" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="2.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <android.support.v4.view.ViewPager android:id="@+id/viewpager1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/pop_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/rl_five" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="@color/black" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  按投资进度排序" android:drawableLeft="@drawable/all" android:layout_alignParentLeft="true" />
+            <ImageView android:id="@+id/iv_five" android:background="@drawable/mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@drawable/listview_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/rl_all" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="@color/black" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  按发布时间排序" android:drawableLeft="@drawable/fast_cash_0" android:layout_alignParentLeft="true" />
+            <ImageView android:id="@+id/iv_all" android:background="@drawable/mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@drawable/listview_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/rl_gaofushuai" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="@color/black" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  按收益率高低排序" android:drawableLeft="@drawable/fast_cash_1" android:layout_alignParentLeft="true" />
+            <ImageView android:id="@+id/iv_gaofushuai" android:background="@drawable/mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@drawable/listview_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/rl_fuerdai" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="@color/black" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  按期限长短排序" android:drawableLeft="@drawable/fast_cash_2" android:layout_alignParentLeft="true" />
+            <ImageView android:id="@+id/iv_fuerdai" android:background="@drawable/mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@drawable/listview_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/rl_baifumei" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="@color/black" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  按额度高低排序" android:drawableLeft="@drawable/fast_cash_3" android:layout_alignParentLeft="true" />
+            <ImageView android:id="@+id/iv_baifumei" android:background="@drawable/mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@drawable/listview_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+    <ImageView android:id="@+id/ll_back" android:background="#b0000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@+id/pop_layout" />
+</RelativeLayout>

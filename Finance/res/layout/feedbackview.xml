@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/head_layout_public" />
+    <EditText android:id="@+id/edit_temp1" android:hint="感谢您对前海理想金融的支持,我们期待您的宝贵的意见,请点击输入..." style="@style/input_edit_feedback" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip">
+        <Button android:textSize="18.0sp" android:textColor="@color/white" android:id="@+id/bt_temp1" android:background="@drawable/btn_big_n" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="提交" android:textAlignment="center" />
+    </RelativeLayout>
+</LinearLayout>
